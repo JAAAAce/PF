@@ -1,0 +1,569 @@
+body{font-family: 'Noto Sans KR', sans-serif; color: #1b1e23; font-size: 14px;}
+/* 모바일 메뉴 */
+.mobMenu{background: #fff; width: 350px;  height: 100%;  position: fixed; top: 0; left: -100%; z-index: 1000; transition: .3s; padding: 40px; box-sizing: border-box;}
+.mobMenu .closeBtn{position: absolute; top: 25px; right: 10px;}
+.mobMenu .closeBtn .close{background: url(../images/icon/icon_sprite_01.png) no-repeat -26px -85px; width: 16px; height: 16px; display: block;}
+.mobMenu .iconMenu{display: flex; justify-content: space-around; border-bottom: 2px solid #1b1e23; width: 100%; margin-top: 20px;}
+.mobMenu .iconMenu li{width: 70px; height: 90px; border-radius: 10px 10px 0 0; font-size: 13px; text-align: center; position: relative; cursor: pointer;}
+.mobMenu .iconMenu li:hover{background: #1b1e23;}
+.mobMenu .iconMenu li:hover a{color: #fff;}
+.mobMenu .iconMenu li span{display: block; background-image: url(../images/icon/icon_sprite_01.png); background-repeat: no-repeat; position: absolute; top: 10px; left: 50%; transform: translateX(-50%);}
+.mobMenu .iconMenu li span.orderIco{width: 20px; height: 24px; background-position: -56px -66px;}
+.mobMenu .iconMenu li span.timeIco{width: 25px; height: 24px; background-position: -53px -18px;}
+.mobMenu .iconMenu li span.flightIco{width: 30px; height: 20px; background-position: -50px -92px;}
+.mobMenu .iconMenu li span.passIco{width: 21px; height: 24px; background-position: -56px -42px;}
+.mobMenu .iconMenu li:hover span.orderIco{background-position: -86px -66px;}
+.mobMenu .iconMenu li:hover span.timeIco{background-position: -83px -18px;}
+.mobMenu .iconMenu li:hover span.flightIco{background-position: -80px -92px;}
+.mobMenu .iconMenu li:hover span.passIco{background-position: -86px -42px;}
+.mobMenu .iconMenu li a{display: none; position: absolute; top: 40px; left: 50%; transform: translateX(-50%); width: 100%;}
+.mobMenu .iconMenu li:hover a{display: block;}
+.menuTit{display: flex; justify-content: space-between; cursor: pointer;}
+.menuTit em{font-size: 18px; font-weight: bold;}
+.menuTit .menuBtn{background: url(../images/icon/icon_sprite_01.png) no-repeat -26px -76px; width: 14px; height: 8px; display: block; margin-top: 10px;}
+.menuTit .menuBtn.fold{transform: rotate(180deg);}
+.mobMenu .allMenu{margin-top: 20px;}
+.mobMenu .allMenu .all{margin-left: 15px; margin-bottom: 10px; display: block;}
+.mobMenu .allMenu .all.closed{display: none;} /* js로 클래스 부여 */
+.mobMenu .allMenu .all li{padding: 4px 0; margin-top: 5px;}
+.mobMenu .allMenu .all li a{font-weight: bold;}
+.mobMenu .category{margin-top: 10px;}
+.mobMenu .category .categoryList{margin-left: 15px; display: block;}
+.mobMenu .category .categoryList.closed{display: none;} /* js로 클래스 remove,add조절 */
+.mobMenu .category .categoryList.closed .fold{display: block;} /* js로 클래스 remove,add조절 */
+.mobMenu .category .categoryList li{padding: 4px 0; margin-top: 5px;}
+.mobMenu .category .categoryList li a{font-weight: bold;}
+
+
+/* 레이아웃 */
+.wrap{width: 100%;}
+.headerWrap{width: 100%; position: fixed; top: 0; left: 0; z-index: 100; background: #fff;}
+.mainBannerWrap{width: 100%; margin-top: 150px;}
+.navWrap{width: 100%; margin-top: 80px;}
+.contentWrap{width: 100%; margin-top: 90px;}
+.footerTotal{width: 100%;}
+.footerTopWrap{width: 100%; margin-top: 80px; background: #282C34;}
+.footerBottomWrap{width: 100%; background: #1B1E23;}
+
+
+/* 헤더 */
+.headerArea{width: 1360px; height: auto; margin: 0 auto; display: flex; justify-content: space-between; padding: 45px 20px 20px 20px; box-sizing: border-box;}
+.headerArea .headerLeft{display: flex;}
+.headerArea .headerLeft .goMenu{margin-right: 20px;}
+.headerArea .headerLeft .goMenu a{display: block; margin-top: 10px;}
+.headerArea .headerLeft .logo{margin-right: 30px;}
+.headerArea .headerLeft .search .searchBox{width: 400px; height: 52px; background: #F2F4F7; border-radius: 50px; position: relative;}
+.headerArea .headerLeft .search .searchBox a{background: url(../images/icon/icon_sprite_01.png) no-repeat -28px -48px; width: 22px; height: 22px; display: block; position: absolute; top: 50%; transform: translateY(-50%); right: 25px;}
+.headerArea .headerRight{margin-top: 16px;}
+.headerArea .headerRight ul{display: flex;}
+.headerArea .headerRight ul li{text-align: center;}
+.headerArea .headerRight ul li a{font-weight: bold; display: block; margin-right: 30px;}
+.headerArea .headerRight ul li:last-child a{margin-right: 0;}
+.headerArea .headerRight ul li a.shopIco{margin-right: 20px; background: url(../images/icon/icon_sprite_01.png) no-repeat -4px -2px; width: 20px; height: 20px;}
+.headerArea .headerRight ul li a.delivIco{margin-right: 20px; background: url(../images/icon/icon_sprite_01.png) no-repeat 0 -25px; width: 27px; height: 22px;}
+.headerArea .headerRight ul li a.persIco{margin-right: 20px; background: url(../images/icon/icon_sprite_01.png) no-repeat -3px -48px; width: 22px; height: 22px;}
+
+
+/* 메인배너 영역 */
+.mainBanner{width: 1360px; height: 710px; margin: 0 auto; position: relative; padding: 0 20px; box-sizing: border-box;}
+.mainSwiper{width: 100%; height: 100%; margin: 50px auto;}
+.mainSwiper .swiper-slide{text-align: center; font-size: 18px; background: #fff; position: relative; float: left;}
+.mainSwiper .swiper-slide p{position: absolute; text-align: left; font-size: 46px; color: #fff; font-weight: bold; text-shadow: 0 4px 10px rgb(0 0 0 / 50%); margin-top: 40px; margin-left: 50px;}
+.mainSwiper .swiper-slide p span{position: absolute; display: block; font-weight: normal; font-size: 20px; margin-top: 20px;}
+.mainSwiper .swiper-slide img {width: 100%;  object-fit: cover; display: block;}
+.mainBanner .mainSwiper-control{position: absolute; width: 125px; height: 40px; bottom: -41px; right: 59px; border: 1px solid #DDE0E5; display: flex;}
+.mainBanner .swiper-button-prev{background: url(../images/icon/icon_controller.png) no-repeat; width: 6px; height: 10px; position: absolute; top: 36px; left: 15px; cursor: pointer;}
+.mainBanner .swiper-button-prev::after{display: none;}
+.mainBanner .mainSwiper-control .swiper-pagination{position: absolute; top: 8px; right: 0; z-index: 20;}
+.mainBanner .swiper-button-next{background: url(../images/icon/icon_controller.png) -8px 0 no-repeat; width: 6px; height: 10px; position: absolute; top: 36px; right: 15px; cursor: pointer;}
+.mainBanner .swiper-button-next::after{display: none;}
+.mainBanner .pauseBtn-box{border: 1px solid #DDE0E5; width: 40px; height: 40px; position: absolute; bottom: -1px; right: -40px; border-left: none; cursor: pointer;}
+.mainBanner .pauseBtn-box .pauseBtn{background: url(../images/icon/icon_controller.png) no-repeat -16px 0; width: 8px; height: 10px; position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.mainBanner .pauseBtn-box .pauseBtn.change{background: url(../images/icon/icon_controller.png) no-repeat -26px 0; width: 10px; height: 12px;}
+.multiple{width: 960px; margin: 0 auto;}
+.multiple img{width: 100%;}
+
+
+/* 네비배너 영역 */
+.navBanner{width: 1360px; height: 300px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; position: relative; top: 30px;}
+.navBanner .navSwiper{width: 1160px; margin: 0 auto;}
+.navBanner .swiper .swiper-wrapper{width: 1160px;}
+.navBanner .swiper-slide{width: 168px; height: 228px; cursor: pointer;}
+.navBanner .swiper-slide img{width: 168px; height: 168px; border-radius: 50%;}
+.navBanner .swiper-slide p{font-size: 16px; width: 150px; text-align: center; margin-top: 10px;}
+.navBanner .swiper-button-prev{background: url(../images/icon/icon_controller.png) no-repeat 0 -45px; width: 16px; height: 28px; position: absolute; top: 95px; left: 40px; z-index: 10;}
+.navBanner .swiper-button-prev::after{display: none;}
+.navBanner .swiper-button-next{background: url(../images/icon/icon_controller.png) no-repeat 0 -45px; width: 16px; height: 28px; position: absolute; top: 95px; right: 40px; z-index: 10; transform: rotateY(180deg);}
+.navBanner .swiper-button-next::after{display: none;}
+.navBanner .swiper-pagination{display: none; position: relative; bottom: 0px;} /* 모바일버전에서 display:block하기 */
+.navBanner .swiper-pagination-bullet-active{background: #EA2829;}
+
+
+
+/* 컨텐츠 영역 */
+.contentArea{width: 100%; background: #F6F9FF; height: auto;}
+.contentArea .contentBanner{width: 1360px; height: 580px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; position: relative;}
+.contentArea .contentTitle{font-size: 40px; font-weight: bold; text-align: center; padding: 30px 0;}
+.contentArea .contentBanner .luckySwiper{width: 1160px; margin: 30px auto;}
+.contentArea .contentBanner .swiper-wrapper{width: 1160px;}
+.contentArea .contentBanner .swiper-wrapper .swiper-slide{width: 272px; height: 374px; cursor: pointer;}
+.contentArea .luckySwiper .slideImgBox{width: 100%; height: 233px; background: #fff; position: relative;}
+.contentArea .luckySwiper .slideImgBox .line{width: 70px; height: 6px; background: #1B1E23; position: absolute; top: 0; left: 10px;}
+.contentArea .luckySwiper .slideImgBox span{font-size: 16px; font-weight: normal; position: absolute; top: 5px; left: 15px; z-index: 1;}
+.contentArea .luckySwiper .slideImgBox span em{font-size: 32px; font-weight: bold;}
+.contentArea .luckySwiper .slideImgBox img{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.contentArea .luckySwiper .MDBox{margin-top: 10px;}
+.contentArea .luckySwiper .MDBox .MDTitle{font-weight: bold;}
+.contentArea .luckySwiper .MDBox .MDContent{width: 227px;}
+.contentArea .luckySwiper .prevPrice{margin-top: 20px;}
+.contentArea .luckySwiper .prevPrice .deleted{font-size: 13px; text-decoration: line-through; color: #ABB2BE;}
+.contentArea .luckySwiper .prevPrice .discount{font-size: 13px; padding-left: 10px;}
+.contentArea .luckySwiper .actualPrice{margin-top: 5px;}
+.contentArea .luckySwiper .actualPrice .price_dollar{color: #EA2829; font-size: 18px; font-weight: bold;}
+.contentArea .luckySwiper .actualPrice .price_won{font-size: 13px; padding-left: 10px;}
+.contentArea .contentBanner .swiper-button-next{background: url(../images/icon/icon_controller.png) no-repeat 0 -45px; width: 16px; height: 28px; position: absolute; top: 280px; right: 40px; z-index: 10; transform: rotateY(180deg);}
+.contentArea .contentBanner .swiper-button-next::after{display: none;}
+.contentArea .contentBanner .swiper-button-prev{background: url(../images/icon/icon_controller.png) no-repeat 0 -45px; width: 16px; height: 28px; position: absolute; top: 280px; left: 40px; z-index: 10;}
+.contentArea .contentBanner .swiper-button-prev::after{display: none;}
+.timeBannerZone{width: 100%; background: #ffffff; margin-top: 40px;}
+.timeBannerZone .timeBanner{width: 1360px; height: 650px; margin: 40px auto; padding: 0 20px; box-sizing: border-box; position: relative;}
+.timeBannerZone .contentTitle{font-size: 40px; font-weight: bold; text-align: center; padding: 30px 0;}
+.timeBannerZone .timeSwiper{width: 1160px; margin: 10px auto;}
+.timeBannerZone .timeSwiper .swiper-wrapper{width: 1160px;}
+.timeBannerZone .timeSwiper .swiper-slide{width: 563px; height: 447px;}
+.timeBannerZone .timeSwiper .timeSaleBox{width: 100%; height: 100%; position: relative;}
+.timeBannerZone .timeSwiper .timeSaleBox img{width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+.timeBannerZone .timeSwiper .timeSaleBox .msgBox{width: 40%; height: 60%; background: #fff; position: absolute; z-index: 2; top: 50%; transform: translateY(-50%); right: 40px; padding: 25px; box-sizing: border-box;}
+.timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeMD{font-size: 24px; text-decoration: underline; line-height: 2; font-weight: bold; margin-bottom: 80px;}
+.timeBannerZone .timeSwiper .timeSaleBox .msgBox .dot{width: 12px; height: 12px; border-radius: 50%; background: #EA2829; position: absolute;}
+.timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeLimit{font-size: 30px; font-weight: bold; margin-left: 10px;}
+.timeBannerZone .timeBanner .swiper-button-prev{background: url(../images/icon/icon_controller.png) no-repeat 0 -45px; width: 16px; height: 28px; position: absolute; top: 350px; left: 40px; z-index: 10;}
+.timeBannerZone .timeBanner .swiper-button-prev::after{display: none;}
+.timeBannerZone .timeBanner .swiper-button-next{background: url(../images/icon/icon_controller.png) no-repeat 0 -45px; width: 16px; height: 28px; position: absolute; top: 350px; right: 40px; z-index: 10; transform: rotateY(180deg);}
+.timeBannerZone .timeBanner .swiper-button-next::after{display: none;}
+
+.themeMDWrap{width: 1120px; height: auto; margin: 30px auto; padding: 0 20px;}
+.themeMDZone{width: 100%; margin: 0 auto; margin-bottom: 50px;}
+.themeMDZone .themebanner{width: 100%; height: auto; position: relative;}
+.themeMDZone .themebanner img{width: 100%;}
+.themeMDZone .themebanner h3{font-weight: bold; font-size: 42px; color: #fff; text-shadow: 0 4px 10px rgb(0 0 0 / 50%); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.themeMDZone .themebanner .btn{background: url(../images/icon/icon_controller.png) no-repeat -90px -21px; width: 40px; height: 22px; display: block; position: absolute; top: 50%; right: 100px; transform: translateY(-50%); cursor: pointer;}
+.themeMDZone .themebanner .btn.unfold{transform: rotate(180deg);}
+.themeMDZone .themeMDBox{overflow: hidden; height: 490px; position: relative;}
+.themeMDZone .themeMDBox.extension{height: auto;}
+.themeMDZone .themeMDBox.hidden{display: none;}
+.themeMDZone .themeMDBox .MDList{display: flex; width: 1120px; flex-wrap: wrap;}
+.themeMDZone .themeMDBox .MDList li{margin-right: 20px; margin-top: 20px; padding-bottom: 30px; cursor: pointer;}
+.themeMDZone .themeMDBox .MDList li:nth-child(4n){margin-right: 0;}
+.themeMDZone .themeMDBox .MDList li .box{width: 265px; height: 265px; background: #fff; text-align: center;}
+.themeMDBox .MDList li .box img{width: 172px; height: 172px; background: #fff; margin-top: 45px;}
+.themeMDBox .MDList li .MDBox{margin-top: 10px;}
+.themeMDBox .MDList li .MDBox .MDTitle{font-weight: bold;}
+.themeMDBox .MDList li .MDBox .MDContent{width: 227px;}
+.themeMDBox .MDList li .prevPrice{margin-top: 20px;}
+.themeMDBox .MDList li .prevPrice .deleted{font-size: 13px; text-decoration: line-through; color: #ABB2BE;}
+.themeMDBox .MDList li .prevPrice .discount{font-size: 13px; padding-left: 10px;}
+.themeMDBox .MDList li .actualPrice{margin-top: 5px;}
+.themeMDBox .MDList li .actualPrice .price_dollar{color: #EA2829; font-size: 18px; font-weight: bold;}
+.themeMDBox .MDList li .actualPrice .price_won{font-size: 13px; padding-left: 10px;}
+.themeMDBox .MDList li .noticeBox{display: flex;}
+.themeMDBox .MDList li .noticeBox div{border: 1px solid #CCD1D8; font-size: 12px; color: #5C6677; padding: 0 2px; margin-right: 5px; margin-top: 5px;}
+.themeMDBox .more{display: flex; justify-content: center; cursor: pointer; position: absolute; left: 50%; transform: translateX(-50%); bottom: 0;}
+.themeMDBox .more span{font-weight: bold; font-size: 13px; color: #5C6677;}
+.themeMDBox .more .moreBtn{width: 10px; height: 10px; background: url(../images/icon/icon_controller.png) no-repeat -50px 0; margin-left: 3px; margin-top: 5px;}
+
+/* 푸터 영역 */
+.footerArea{width: 1360px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;}
+.footerArea .footerTop{width: 100%; box-sizing: border-box;}
+.footerArea .footerTop ul{width: 100%; display: flex; padding: 25px 0;}
+.footerArea .footerTop ul li{margin-right: 30px;}
+.footerArea .footerTop ul li a{margin-right: 30px; color: #ABB2BE;}
+.footerArea .footerTop ul li a em{font-weight: bold;}
+.footerArea .footerTop ul li:last-child{margin-right: 0}
+.footerBottom{width: 1360px; margin: 0 auto; padding: 50px 20px; box-sizing: border-box; display: flex; color: #5C6677;}
+.footerBottom .left{margin-right: 20px;}
+.footerBottom .left .name{margin-top: 20px; font-weight: bold; font-size: 18px;}
+.footerBottom .left ul li{ margin-bottom: 5px;}
+.footerBottom .left ul li span{position: relative; margin-right: 12px;}
+.footerBottom .left ul li span::after{content: ""; display: block; width: 1px; height: 12px; background: #5C6677; position: absolute; top:5px; left: -7px;}
+.footerBottom .left ul li span:first-child::after{content: none}
+.footerBottom .left p{margin-top: 20px;}
+.footerBottom .left .sns{display: flex; margin-top: 16px;}
+.footerBottom .left .sns .faceBook{margin-right: 32px;}
+.footerBottom .left .sns .faceBook span{width: 48px; height: 48px; background: url(../images/icon/icon_footer.png) no-repeat 0 -12px; display: block;}
+.footerBottom .left .sns .instagram span{width: 48px; height: 48px; background: url(../images/icon/icon_footer.png) no-repeat 0 -60px; display: block;}
+.footerBottom .right strong{width: 400px; font-weight: bold;}
+.footerBottom .right p{width: 400px;}
+
+
+/* 반응형 미디어쿼리 */
+@media screen and (max-width: 1380px){
+    .headerArea{width: 1100px;}
+    .mainBanner{width: 1100px; height: 574px;}
+    .mainSwiper .swiper-slide p{font-size: 30px;}
+    .navBanner{width: 1100px; height: 250px;}
+    .navBanner .navSwiper{width: 980px;}
+    .navBanner .swiper .swiper-wrapper{width: 980px;}
+    .navBanner .swiper-slide img{width: 140px; height: 140px;}
+    .navBanner .swiper-button-prev{left: 30px;}
+    .navBanner .swiper-button-next{right: 30px;}
+    .contentArea .contentBanner{width: 1100px; height: 580px;}
+    .contentArea .contentBanner .luckySwiper{width: 980px;}
+    .contentArea .contentBanner .swiper-wrapper{width: 980px;}
+    .contentArea .contentBanner .swiper-wrapper .swiper-slide{width: 170px;}
+    .contentArea .contentBanner .swiper-button-next{right: 30px;}
+    .contentArea .contentBanner .swiper-button-prev{left: 30px;}
+    .themeMDWrap{width: 980px;}
+    .themeMDZone .themeMDBox{height: 430px;}
+    .themeMDZone .themeMDBox .MDList{width: 980px;}
+    .themeMDZone .themeMDBox .MDList li .box{width: 220px; height: 220px;}
+    .themeMDBox .MDList li .box img{width: 165px; height: 165px; margin-top: 40px;} 
+    .timeBannerZone .timeBanner{width: 1100px;}
+    .timeBannerZone .timeSwiper{width: 980px; margin: 10px auto;}
+    .timeBannerZone .timeSwiper .swiper-wrapper{width: 980px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeMD{font-size: 20px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .dot{width: 10px; height: 10px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeLimit{font-size: 22px; margin-left: 10px;}
+    .timeBannerZone .timeBanner .swiper-button-prev{top: 350px; left: 30px;}
+    .timeBannerZone .timeBanner .swiper-button-next{top: 350px; right: 30px;}
+    .footerArea{width: 1100px;}
+}
+
+@media screen and (max-width: 1120px){
+    .headerArea{width: 1000px;}
+    .headerArea .headerRight ul{margin-left: 10px;}
+    .headerArea .headerRight ul li:last-child a{display: none}
+    .mainBanner{width: 1000px; height: 522px;}
+    .mainSwiper .swiper-slide p{font-size: 26px; width: 100%;}
+    .mainSwiper .swiper-slide p span{font-size: 18px; width: 100%;}
+    .navBanner{width: 1000px; height: 230px;}
+    .navBanner .navSwiper{width: 880px;}
+    .navBanner .swiper .swiper-wrapper{width: 880px;}
+    .navBanner .swiper-slide img{width: 135px; height: 135px;}
+    .contentArea .contentBanner{width: 1000px; height: 550px;}
+    .contentArea .contentBanner .luckySwiper{width: 880px;}
+    .contentArea .contentBanner .swiper-wrapper{width: 880px;}
+    .contentArea .contentBanner .swiper-wrapper .swiper-slide{width: 150px;}
+    .contentArea .luckySwiper .slideImgBox{height: 190px;}
+    .contentArea .luckySwiper .slideImgBox .line{width: 60px; top: 0;}
+    .contentArea .luckySwiper .slideImgBox img{width: 170px; height: 170px;}
+    .contentArea .luckySwiper .MDBox .MDContent{width: 190px;}
+    .themeMDWrap{width: 880px;}
+    .themeMDZone .themeMDBox .MDList{width: 880px;}
+    .themeMDZone .themeMDBox .MDList li .box{width: 200px; height: 200px;}
+    .themeMDBox .MDList li .box img{width: 150px; height: 150px; margin-top: 40px;} 
+    .themeMDBox .MDList li .MDBox .MDTitle{width: 190px;}
+    .themeMDBox .MDList li .MDBox .MDContent{width: 190px;}
+    .themeMDBox .MDList li .prevPrice .deleted{font-size: 12px;}
+    .themeMDBox .MDList li .prevPrice .discount{font-size: 12px;}
+    .themeMDBox .MDList li .actualPrice .price_dollar{font-size: 16px;}
+    .themeMDBox .MDList li .actualPrice .price_won{font-size: 12px;}
+    .timeBannerZone .timeBanner{width: 1000px;}
+    .timeBannerZone .timeSwiper{width: 880px; height: 425px; margin: 10px auto;}
+    .timeBannerZone .timeSwiper .swiper-wrapper{width: 880px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox{height: 50%;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeMD{font-size: 16px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .dot{width: 9px; height: 9px; margin-top: -5px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeLimit{font-size: 21px; margin-left: 5px;}
+    .timeBannerZone .timeBanner .swiper-button-prev{top: 350px; left: 30px;}
+    .timeBannerZone .timeBanner .swiper-button-next{top: 350px; right: 30px;}
+    .footerBottomWrap .footerBottom .right{display: none;}
+    .footerArea{width: 1000px;}
+    .footerArea .footerTop ul{flex-wrap: wrap; padding: 0;}
+    .footerArea .footerTop ul li{padding: 10px 0; box-sizing: border-box;}
+}
+
+@media screen and (max-width: 1020px){
+    .headerArea{width: 840px; margin-top: 20px;}
+    .headerArea .headerLeft .search{position: absolute; right: 20px;}
+    .headerArea .headerRight ul{position: absolute; top: 0; right: 0; margin-top: 20px;}
+    .mainBanner{width: 840px; height: 439px;}
+    .navBanner{width: 840px; height: 191px;}
+    .navBanner .navSwiper{width: 790px;}
+    .navBanner .swiper .swiper-wrapper{width: 790px;}
+    .navBanner .swiper-slide p{font-size: 13px; width: 130px;}
+    .navBanner .swiper-button-prev{display: none;}
+    .navBanner .swiper-button-next{display: none;}
+    .navBanner .swiper-pagination{display: block;}
+    .contentArea{margin-top: 140px; height: auto;}
+    .contentArea .contentTitle{font-size: 30px; margin-top: 20px;}
+    .contentArea .contentBanner{width: 840px; height: 530px;}
+    .contentArea .contentBanner .luckySwiper{width: 790px;}
+    .contentArea .contentBanner .swiper-wrapper{width: 790px;}
+    .contentArea .contentBanner .swiper-wrapper .swiper-slide{width: 130px;}
+    .contentArea .luckySwiper .slideImgBox{height: 170px;}
+    .contentArea .luckySwiper .slideImgBox .line{width: 55px;}
+    .contentArea .luckySwiper .slideImgBox img{width: 150px; height: 150px;}
+    .contentArea .luckySwiper .slideImgBox span{font-size: 13px;}
+    .contentArea .luckySwiper .slideImgBox span em{font-size: 26px;}
+    .contentArea .luckySwiper .MDBox .MDContent{width: 170px;}
+    .contentArea .contentBanner .swiper-button-next{top: 225px; right: -3px;}
+    .contentArea .contentBanner .swiper-button-prev{top: 225px; left: -3px;}
+    .themeMDWrap{width: 790px;}
+    .themeMDZone .themeMDBox{height: 400px;}
+    .themeMDZone .themeMDBox .MDList{width: 790px;}
+    .themeMDZone .themeMDBox .MDList li{width: 180px;}
+    .themeMDZone .themeMDBox .MDList li .box{width: 180px; height: 180px;}
+    .themeMDBox .MDList li .box img{width: 150px; height: 150px; margin-top: 30px;} 
+    .themeMDBox .MDList li .MDBox .MDTitle{width: 180px;}
+    .themeMDBox .MDList li .MDBox .MDContent{width: 180px;}
+    .timeBannerZone .timeBanner{width: 840px; height: 550px;}
+    .timeBannerZone .timeSwiper{width: 790px; height: 380px; margin: 10px auto;}
+    .timeBannerZone .timeSwiper .swiper-wrapper{width: 790px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox{height: 50%;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeMD{font-size: 14px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .dot{width: 8px; height: 8px; margin-top: -5px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeLimit{font-size: 19px;}
+    .timeBannerZone .timeBanner .swiper-button-prev{top: 350px; left: -3px;}
+    .timeBannerZone .timeBanner .swiper-button-next{top: 350px; right: -3px;}
+    .footerArea{width: 840px;}
+}
+
+@media screen and (max-width: 880px){
+    .contentArea .contentBanner .swiper-button-next{display: none;}
+    .contentArea .contentBanner .swiper-button-prev{display: none;}
+    .timeBannerZone .timeBanner .swiper-button-prev{display: none;}
+    .timeBannerZone .timeBanner .swiper-button-next{display: none;}
+}
+
+@media screen and (max-width: 860px){
+    .mainBanner{width: 750px; height: 392px;}
+    .mainSwiper .swiper-slide p{font-size: 20px; margin-left: 20px; margin-top: 20px;}
+    .mainSwiper .swiper-slide p span{font-size: 14px;}
+    .navBanner{width: 750px; height: 170px;}
+    .navBanner .navSwiper{width: 680px;}
+    .navBanner .swiper .swiper-wrapper{width: 680px;}
+    .navBanner .swiper-slide p{font-size: 12px; width: 120px;}
+    .contentArea .contentTitle{font-size: 24px; padding: 25px 0 15px 0;}
+    .contentArea .contentBanner{width: 750px; height: 500px;}
+    .contentArea .contentBanner .luckySwiper{width: 680px;}
+    .contentArea .contentBanner .swiper-wrapper{width: 680px;}
+    .contentArea .contentBanner .swiper-wrapper .swiper-slide{height: 310px;}
+    .contentArea .contentBanner{height: 420px;}
+    .contentArea .luckySwiper .slideImgBox{height: 150px;}
+    .contentArea .luckySwiper .slideImgBox .line{width: 45px; height: 4px;}
+    .contentArea .luckySwiper .slideImgBox img{width: 130px; height: 130px;}
+    .contentArea .luckySwiper .slideImgBox span{font-size: 12px;}
+    .contentArea .luckySwiper .slideImgBox span em{font-size: 20px;}
+    .contentArea .luckySwiper .MDBox .MDContent{width: 150px; font-size: 13px;}
+    .contentArea .luckySwiper .MDBox .MDTitle{ font-size: 13px;}
+    .contentArea .luckySwiper .prevPrice .deleted{font-size: 12px;}
+    .contentArea .luckySwiper .prevPrice .discount{font-size: 12px;}
+    .contentArea .luckySwiper .actualPrice .price_dollar{font-size: 15px;}
+    .contentArea .luckySwiper .actualPrice .price_won{font-size: 12px;}
+    .themeMDWrap{width: 680px;}
+    .themeMDZone .themeMDBox{height: 430px;}
+    .themeMDZone .themeMDBox .MDList{width: 675px;}
+    .themeMDZone .themeMDBox .MDList li{width: 200px; margin-right: 25px;}
+    .themeMDZone .themeMDBox .MDList li .box{width: 200px; height: 200px;}
+    .themeMDBox .MDList li .box img{width: 155px; height: 155px; margin-top: 40px;} 
+    .themeMDZone .themebanner h3{font-size: 32px;}
+    .timeBannerZone .timeBanner{width: 750px; height: 420px;}
+    .timeBannerZone .timeSwiper{width: 680px; height: 325px; margin: 10px auto;}
+    .timeBannerZone .timeSwiper .swiper-wrapper{width: 680px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox{height: 40%; width: 50%; top: 160px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeMD{font-size: 14px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .dot{width: 8px; height: 8px; margin-top: -35px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeLimit{font-size: 18px; margin-top: -30px;}
+}
+
+
+@media screen and (max-width: 760px){
+    .mainBanner{width: 680px; height: 721px;}
+    .mainSwiper .swiper-slide p{font-size: 46px;}
+    .mainSwiper .swiper-slide p span{font-size: 20px;}
+    .headerArea .headerLeft .search{width: 230px; height: 52px;}
+    .headerArea .headerLeft .search .searchBox{width: 230px; height: 52px;}
+    .navBanner{width: 680px; height: 170px;}
+    .navBanner .navSwiper{width: 600px;}
+    .navBanner .swiper .swiper-wrapper{width: 600px;}
+    .navBanner .swiper-slide img{width: 115px; height: 115px;}
+    .navBanner .swiper-pagination{margin-top: -30px;}
+    .contentArea .contentBanner{width: 680px; height: 400px;}
+    .contentArea .contentBanner .luckySwiper{width: 600px;}
+    .contentArea .contentBanner .swiper-wrapper{width: 600px;}
+    .contentArea .contentBanner .swiper-wrapper .swiper-slide{width: 120px;}
+    .contentArea .contentBanner{height: 370px;}
+    .contentArea .luckySwiper .slideImgBox{height: 130px;}
+    .contentArea .luckySwiper .slideImgBox img{width: 105px; height: 105px;}
+    .themeMDWrap{width: 600px;}
+    .themeMDZone .themeMDBox{height: 400px; margin-left: 20px;}
+    .themeMDZone .themeMDBox .MDList{width: 600px;}
+    .themeMDZone .themeMDBox .MDList li{width: 170px; margin-right: 25px;}
+    .themeMDZone .themeMDBox .MDList li .box{width: 170px; height: 170px;}
+    .themeMDBox .MDList li .box img{width: 145px; height: 145px; margin-top: 20px;} 
+    .themeMDZone .themebanner h3{font-size: 26px;}
+    .timeBannerZone .timeBanner{width: 680px; height: 400px;}
+    .timeBannerZone .timeSwiper{width: 600px; height: 287px; margin: 10px auto;}
+    .timeBannerZone .timeSwiper .swiper-wrapper{width: 680px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox{height: 40%; width: 50%; top: 150px; right: 20px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeMD{font-size: 12px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .dot{width: 7px; height: 7px; margin-top: -35px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeLimit{font-size: 17px; margin-top: -35px;}
+    .footerArea{width: 680px;}
+    .footerArea .footerBottom .left ul{}
+
+}
+
+@media screen and (max-width: 680px){
+    .headerArea{width: 640px;}
+    .headerArea .logo img{width: 160px;}
+    .headerArea .headerLeft .goMenu a{margin-top: 5px;}
+    .headerArea .headerLeft .search{width: 230px; height: 36px;}
+    .headerArea .headerLeft .search .searchBox{width: 230px; height: 36px;}
+    .mainBanner{width: 640px; height: 678px;}
+    .navBanner{width: 640px; height: 170px;}
+    .navBanner .navSwiper{width: 540px;}
+    .navBanner .swiper .swiper-wrapper{width: 540px;}
+    .navBanner .swiper-slide p{font-size: 11px; width: 110px;}
+    .contentArea{margin-top: 140px; height: auto;}
+    .contentArea .contentBanner{width: 640px; height: 350px;}
+    .contentArea .contentBanner .luckySwiper{width: 600px;}
+    .contentArea .contentBanner .swiper-wrapper{width: 600px;}
+    .contentArea .contentBanner .swiper-wrapper .swiper-slide{width: 120px;}
+    .contentArea .luckySwiper .slideImgBox{height: 130px;}
+    .contentArea .luckySwiper .slideImgBox img{width: 105px; height: 105px;}
+    .themeMDWrap{width: 540px; margin-top: 75px;}
+    .themeMDZone .themeMDBox .MDList{width: 520px;}
+    .themeMDZone .themeMDBox .MDList li{width: 160px; margin-right: 10px;}
+    .themeMDZone .themeMDBox .MDList li .box{width: 160px; height: 160px;}
+    .themeMDBox .MDList li .box img{width: 130px; height: 130px; margin-top: 15px;} 
+    .themeMDBox .MDList li .MDBox .MDTitle{font-size: 11px; width: 160px;}
+    .themeMDBox .MDList li .MDBox .MDContent{width: 160px; font-size: 11px;}
+    .themeMDBox .MDList li .prevPrice .deleted{font-size: 11px;}
+    .themeMDBox .MDList li .prevPrice .discount{font-size: 11px;}
+    .themeMDBox .MDList li .actualPrice .price_dollar{font-size: 14px;}
+    .themeMDBox .MDList li .actualPrice .price_won{font-size: 11px;}
+    .themeMDBox .MDList li .noticeBox div{font-size: 9px;}
+    .timeBannerZone .timeBanner{width: 640px; height: 310px;}
+    .timeBannerZone .timeSwiper{width: 540px; height: 260px; margin: 10px auto;}
+    .timeBannerZone .timeSwiper .swiper-wrapper{width: 540px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox{height: 30%; width: 50%; top: 120px; right: 20px; padding: 10px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeMD{font-size: 11px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .dot{width: 7px; height: 7px; margin-top: -35px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeLimit{font-size: 14px; margin-top: -35px;}
+
+}
+
+@media screen and (max-width: 660px){
+    .mainBanner{width: 600px; height: 636px;}
+    .navBanner{width: 600px; height: 170px;}
+    .navBanner .navSwiper{width: 520px;}
+    .navBanner .swiper .swiper-wrapper{width: 520px;}
+    .navBanner .swiper-slide p{font-size: 10px; width: 100px;}
+    .contentArea{margin-top: 140px;}
+    .contentArea .contentBanner{width: 600px; height: 360px;}
+    .contentArea .contentBanner .luckySwiper{width: 520px;}
+    .contentArea .contentBanner .swiper-wrapper{width: 520px;}
+    .contentArea .contentBanner .swiper-wrapper .swiper-slide{width: 110px;}
+    .contentArea .luckySwiper .slideImgBox{height: 110px;}
+    .contentArea .luckySwiper .slideImgBox img{width: 95px; height: 95px;}
+    .themeMDWrap{margin-top: 75px;}
+    .timeBannerZone .timeBanner{width: 600px; height: 290px;}
+    .timeBannerZone .timeSwiper{width: 520px; height: 250px; margin: 10px auto;}
+    .timeBannerZone .timeSwiper .swiper-wrapper{width: 520px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox{height: 30%; width: 50%; top: 120px; right: 20px; padding: 10px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeMD{font-size: 11px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .dot{width: 7px; height: 7px; margin-top: -35px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeLimit{font-size: 14px; margin-top: -35px;}
+}
+
+
+@media screen and (max-width: 610px){
+    .mainBanner{width: 500px; height: 530px;}
+    .mainSwiper .swiper-slide p{font-size: 26px;}
+    .mainSwiper .swiper-slide p span{font-size: 18px;}
+    .mainBanner .mainSwiper-control{display: none;}
+    .navWrap{margin-top: 30px;}
+    .navBanner{width: 500px; height: 140px;}
+    .navBanner .navSwiper{width: 460px;}
+    .navBanner .swiper .swiper-wrapper{width: 460px;}
+    .navBanner .swiper-slide p{width: 90px;}
+    .navBanner .swiper-slide img{width: 90px; height: 90px;}
+    .navBanner .swiper-pagination{margin-top: -50px;}
+    .contentArea .contentBanner{width: 500px; height: 360px;}
+    .contentArea .contentBanner .luckySwiper{width: 460px;}
+    .contentArea .contentBanner .swiper-wrapper{width: 460px;}
+    .contentArea .contentBanner .swiper-wrapper .swiper-slide{width: 150px;}
+    .contentArea .luckySwiper .slideImgBox{height: 150px; width: 150px;}
+    .contentArea .luckySwiper .slideImgBox img{width: 95px; height: 95px;}
+    .contentArea .luckySwiper .slideImgBox .line{width: 35px; height: 3px;}
+    .contentArea .luckySwiper .slideImgBox span{font-size: 11px;}
+    .contentArea .luckySwiper .slideImgBox span em{font-size: 16px;}
+    .contentArea .luckySwiper .MDBox .MDContent{font-size: 11px;}
+    .contentArea .luckySwiper .MDBox .MDTitle{font-size: 11px;}
+    .contentArea .luckySwiper .MDBox .MDContent{width: 145px;}
+    .contentArea .luckySwiper .prevPrice .deleted{font-size: 10px;}
+    .contentArea .luckySwiper .prevPrice .discount{font-size: 10px;}
+    .contentArea .luckySwiper .actualPrice .price_dollar{font-size: 13px;}
+    .contentArea .luckySwiper .actualPrice .price_won{font-size: 11px;}
+    .themeMDWrap{width: 460px; margin-top: 110px;}
+    .themeMDZone .themeMDBox{height: 360px;}
+    .themeMDZone .themeMDBox .MDList{width: 460px;}
+    .themeMDZone .themeMDBox .MDList li{width: 140px; margin-right: 10px;}
+    .themeMDZone .themeMDBox .MDList li .box{width: 140px; height: 140px;}
+    .themeMDBox .MDList li .box img{width: 120px; height: 120px; margin-top: 10px;} 
+    .themeMDBox .MDList li .MDBox .MDTitle{font-size: 9px; width: 140px;}
+    .themeMDBox .MDList li .MDBox .MDContent{width: 140px; font-size: 9px;}
+    .themeMDBox .MDList li .prevPrice .deleted{font-size: 9px;}
+    .themeMDBox .MDList li .prevPrice .discount{font-size: 9px;}
+    .themeMDBox .MDList li .actualPrice .price_dollar{font-size: 12px;}
+    .themeMDBox .MDList li .actualPrice .price_won{font-size: 9px;}
+    .themeMDZone .themebanner h3{font-size: 24px;}
+    .themeMDZone .themebanner .btn{transform: scale(0.6); margin-top: -10px;}
+    .themeMDZone .themebanner .btn.unfold{transform: scale(0.6); margin-top: -10px;}
+    .timeBannerZone .timeBanner{width: 500px; height: 240px;}
+    .timeBannerZone .timeSwiper{width: 460px; height: 220px; margin: 10px auto;}
+    .timeBannerZone .timeSwiper .swiper-wrapper{width: 460px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox{height: 30%; width: 50%; top: 110px; right: 20px; padding: 10px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeMD{font-size: 10px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .dot{width: 6px; height: 6px; margin-top: -35px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeLimit{font-size: 13px; margin-top: -35px;}
+}
+
+
+@media screen and (max-width: 510px){
+    .mobMenu{width: 100%;}
+    .headerArea{width: 400px;}
+    .headerArea .logo img{width: 120px;}
+    .headerArea .headerLeft .goMenu a{margin-top: 0;}
+    .headerArea .headerLeft .search{width: 180px; height: 28px;}
+    .headerArea .headerLeft .search .searchBox{width: 180px; height: 28px;}
+    .headerArea .headerRight ul li{font-size: 12px}
+    .headerArea .headerLeft .search .searchBox a{right: 10px;}
+    .mainBanner{width: 400px; height: 424px;}
+    .mainSwiper .swiper-slide p{font-size: 28px; width: 100%;}
+    .mainSwiper .swiper-slide p span{font-size: 16px;}
+    .navBanner{width: 400px; height: 140px;}
+    .navBanner .navSwiper{width: 360px;}
+    .navBanner .swiper .swiper-wrapper{width: 360px;}
+    .navBanner .swiper-slide p{width: 65px; font-size: 9px;}
+    .navBanner .swiper-slide img{width: 75px; height: 75px;}
+    .contentArea .contentBanner{width: 400px; height: 370px;}
+    .contentArea .contentBanner .luckySwiper{width: 360px;}
+    .contentArea .contentBanner .swiper-wrapper{width: 360px;}
+    .contentArea .contentBanner .swiper-wrapper .swiper-slide{width: 140px;}
+    .contentArea .luckySwiper .MDBox .MDContent{width: 135px;}
+    .contentArea .luckySwiper .slideImgBox{height: 150px; width: 140px;}
+    .contentArea .luckySwiper .slideImgBox img{width: 95px; height: 95px;}
+    .themeMDWrap{width: 375px;}
+    .themeMDZone .themeMDBox{height: 330px;}
+    .themeMDZone .themeMDBox .MDList{width: 360px;}
+    .themeMDZone .themeMDBox .MDList li{width: 110px; margin-right: 10px;}
+    .themeMDZone .themeMDBox .MDList li .box{width: 110px; height: 110px;}
+    .themeMDBox .MDList li .box img{width: 95px; height: 95px; margin-top: 10px;} 
+    .themeMDBox .MDList li .MDBox .MDTitle{width: 100px;}
+    .themeMDBox .MDList li .MDBox .MDContent{width: 100px;}
+    .themeMDZone .themebanner h3{font-size: 18px;}
+    .themeMDZone .themebanner .btn{margin-right: -30px;}
+    .themeMDZone .themebanner .btn.unfold{margin-right: -30px;}
+    .themeMDBox .MDList li .prevPrice .discount{padding-left: 5px;}
+    .themeMDBox .MDList li .actualPrice .price_won{padding-left: 5px;}
+    .timeBannerZone .timeBanner{width: 400px; height: 195px;}
+    .timeBannerZone .timeSwiper{width: 360px; height: 172px; margin: 10px auto;}
+    .timeBannerZone .timeSwiper .swiper-wrapper{width: 360px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox{height: 20%; width: 55%; top: 100px; right: 15px; padding: 8px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeMD{font-size: 9px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .dot{width: 5px; height: 5px; margin-top: -60px;}
+    .timeBannerZone .timeSwiper .timeSaleBox .msgBox .timeLimit{font-size: 11px; margin-top: -60px;}
+}

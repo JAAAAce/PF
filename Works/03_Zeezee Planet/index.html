@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='Title' content='지지플래닛'> <!-- 꼭 쓰기 -->
+	<meta name='Subject' content='지지플래닛 쇼핑몰 리디자인+코딩'>
+	<meta name='Keywords' content='지지플래닛, 다이어리, 그립톡, 문구, 쇼핑'> <!-- 꼭 쓰기 -->
+	<meta name='Author' content='김은진'> <!-- 꼭 쓰기 -->
+	<meta name='Publisher' content='김은진'>
+	<meta name='Description' content='지지플래닛 쇼핑몰 모바일 버전 리디자인과 코딩입니다'> <!-- 꼭 쓰기 -->
+	<meta name='Author-Date' content='2022-08-22'>
+	<meta name='Robots' content='index,follow'>
+    <title>지지플래닛</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{background: #e2dcf6; height: 100vh;}
+        .phone{width: 460px; height: 902px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: url(./img/iphone.png) no-repeat;}
+        .content{width: 414px; height: 720px; background: #fff; position: absolute; top: 98px; left: 22px;} 
+        .content iframe{width: 100%; height: 100%;}
+        
+    </style>
+</head>
+<body>
+    <div class="phone">
+        <div class="content">
+            <iframe src="./file/open.html" frameborder="0"></iframe>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!-- Modernizr cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> <!-- https://www.cdnpkg.com/modernizr/2.8.3 -->
+    <script>
+        var deviceAgent = navigator.userAgent.toLowerCase();
+        var isTouchDevice = Modernizr.touch ||
+        (deviceAgent.match(/(iphone|ipod|ipad)/) ||
+        deviceAgent.match(/(android)/)  ||
+        deviceAgent.match(/(iemobile)/) ||
+        deviceAgent.match(/iphone/i) ||
+        deviceAgent.match(/ipad/i) ||
+        deviceAgent.match(/ipod/i) ||
+        deviceAgent.match(/blackberry/i) ||
+        deviceAgent.match(/bada/i));
+        //크로스브라우징을 위한 Modernizr스크립트 (꼭 cdn으로 불러와야 함)
+        if (isTouchDevice) {
+            // supported(모바일이면)
+            location.href='./file/open.html'
+        } else {
+            // not-supported(모바일이 아니면)
+        }
+    </script>
+</body>
+</html>

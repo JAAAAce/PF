@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='Title' content='지지플래닛'> <!-- 꼭 쓰기 -->
+	<meta name='Subject' content='지지플래닛 쇼핑몰 리디자인+코딩'>
+	<meta name='Keywords' content='지지플래닛, 다이어리, 그립톡, 문구, 쇼핑'> <!-- 꼭 쓰기 -->
+	<meta name='Author' content='김은진'> <!-- 꼭 쓰기 -->
+	<meta name='Publisher' content='김은진'>
+	<meta name='Description' content='지지플래닛 쇼핑몰 모바일 버전 리디자인과 코딩입니다'> <!-- 꼭 쓰기 -->
+	<meta name='Author-Date' content='2022-08-22'>
+	<meta name='Robots' content='index,follow'>
+    <title>지지플래닛</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/login.css"> 
+    <script src="../js/login.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="login-area">
+            <div class="header-title">
+                <h2>로그인</h2>
+                <div class="closeBtn">
+                    <a href="../file/mypage.html" class="close"><img src="../img/Shopicons_Light_Close.png" alt="뒤로가기 버튼"></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="logo">
+                    <img src="../img/logo.png" alt="지지플래닛 로고">
+                </div>
+                <form action="#">
+                    <input type="text" id="username" class="round roundEmail" placeholder="이메일 주소">
+                    <label for="username" class="inputImg"></label>
+                    <input type="password" id="userpassword" class="round roundPw" placeholder="비밀번호">
+                    <label for="userpassword" class="inputImg"></label>
+                    <div class="checks">
+                        <input type="checkbox" name="자동로그인" id="autoLogin">
+                        <label for="autoLogin">자동로그인</label>
+                        <input type="checkbox" name="아이디 저장" id="saveUsername">
+                        <label for="saveUsername">아이디 저장</label>
+                    </div>
+                    <button type="submit">로그인</button>
+                </form>
+                <ul class="find">
+                    <li><a href="javascript:">아이디 찾기</a></li>
+                    <li><a href="javascript:">비밀번호 찾기</a></li>
+                    <li><a href="javascript:">회원가입</a></li>
+                </ul>
+                <div class="convenient">
+                    <hr />
+                    <span>간편 로그인</span>
+                    <ul>
+                        <li><a href="javascript:"><img src="../img/facebook.png" alt="페이스북 로그인"></a></li>
+                        <li><a href="javascript:"><img src="../img/google.png" alt="구글 로그인"></a></li>
+                        <li><a href="javascript:"><img src="../img/kakao.png" alt="카카오톡 로그인"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-wrap">
+        <div class="menu">
+            <div class="menu-inner">
+                <ul>
+                    <li class="openBtn2"><a href="javascript:" class="bottomMenu-category"><img src="../img/Shopicons_Menu_white.png" alt="카테고리"><span>카테고리</span></a></li>
+                    <li><a href="javascript:"><img src="../img/Shopicons_Clock_white.png" alt="최근 본 상품"><span>최근 본 상품</span></a></li>
+                    <li><a href="../file/index.html" class="bottomMenu-home"><img src="../img/Shopicons_Home_white.png" alt="홈"><span>홈</span></a></li>
+                    <li><a href="javascript:"><img src="../img/Shopicons_Heart_white.png" alt="찜"><span>찜</span></a></li>
+                    <li><a href="./mypage.html" class="bottomMenu-myPage"><img src="../img/Shopicons_Account_white.png" alt="마이페이지"><span>마이페이지</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="category-area">
+        <div class="category-title">
+            <div class="closeBtn">
+                <a href="../file/login.html" class="close"><img src="../img/icons_back.png" alt="뒤로가기 버튼"></a>
+            </div>
+            <h2>카테고리</h2>
+        </div>
+        <div class="category">
+            <ul class="list">
+                <li>
+                    <a href="javascript:" class="fold">
+                        <h3>6-RING DIARY</h3>
+                        <img src="../img/icon_Sort Down.png" alt="펼치기 버튼">
+                    </a>
+                    <ul class="submenu hidden">
+                        <li class="two-depth"><a href="javascript:"><span>커버</span></a></li>
+                        <li class="two-depth"><a href="javascript:"><span>내지 패키지</span></a></li>
+                        <li class="two-depth"><a href="javascript:"><span>필수 내지</span></a></li>
+                        <li class="two-depth"><a href="javascript:"><span>추가 내지</span></a></li>
+                        <li class="two-depth"><a href="javascript:"><span>다이어리 표지</span></a></li>
+                        <li class="two-depth"><a href="javascript:"><span>다이어리 스티커</span></a></li>
+                        <li class="two-depth"><a href="javascript:"><span>기타 제품</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <h3>SPECIAL SALE</h3>
+                        <img src="../img/icon_Sort Down.png" alt="펼치기 버튼" class="go">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <h3>CUSTOM TOK</h3>
+                        <img src="../img/icon_Sort Down.png" alt="펼치기 버튼" class="go">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <h3>PHONE ACC.</h3>
+                        <img src="../img/icon_Sort Down.png" alt="펼치기 버튼" class="go">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <h3>MEMO PAD</h3>
+                        <img src="../img/icon_Sort Down.png" alt="펼치기 버튼" class="go">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <h3>STICKER</h3>
+                        <img src="../img/icon_Sort Down.png" alt="펼치기 버튼" class="go">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <h3>CLOTHES</h3>
+                        <img src="../img/icon_Sort Down.png" alt="펼치기 버튼" class="go">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <h3>ETC.</h3>
+                        <img src="../img/icon_Sort Down.png" alt="펼치기 버튼" class="go">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

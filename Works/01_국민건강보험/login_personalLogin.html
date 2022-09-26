@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="건강, 국민건강보험, 보험">
+    <meta name="description" content="국민건강보험 클론코딩">
+    <meta name="author" content="김은진">
+    <title>국민건강보험</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/personalLoginstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <ul id="skip">
+        <li><a href="#">바로가기</a></li>
+        <li><a href="#">바로가기</a></li>
+        <li><a href="#">서브페이지 바로가기</a></li>
+    <div id="wrap">
+        <div id="blackBox">
+            <div id="loginBox">
+                <div class="title">간편인증</div>
+                <div class="iconBox">
+                    <ul>
+                        <li>
+                            <label for="naverfor">네이버</label>
+                            <div class="icons naver-ico"></div>
+                            <input type="radio" id="naverfor">
+                        </li>
+                    </ul>
+    
+                    <!-- <label for="AuthNaver" class="method naver">네이버</label>
+                    <label for="AuthShinhan" class="method shinhan">신한인증서</label>
+                    <label for="AuthSamsung" class="method samsung">삼성패스</label>
+                    <label for="AuthPayco" class="method payco">페이코</label>
+                    <label for="AuthKakao" class="method kakao">카카오톡</label>
+                    <div class="icons Naver"></div>
+                    <div class="icons Shinhan"></div>
+                    <div class="icons Samsung"></div>
+                    <div class="icons Payco"></div>
+                    <div class="icons Kakao"></div> -->
+    
+                    <!-- <div>
+                        <input class="checker first" type="radio" name="select1" id="AuthNaver">
+                    </div>
+                    <div>
+                        <input class="checker" type="radio" name="select1" id="AuthShinhan">
+                    </div>
+                    <div>
+                        <input class="checker" type="radio" name="select1" id="AuthSamsung">
+                    </div>
+                    <div>
+                        <input class="checker" type="radio" name="select1" id="AuthPayco">
+                    </div>
+                    <div>
+                        <input class="checker" type="radio" name="select1" id="AuthKakao">
+                    </div> -->
+                    <label for="AuthKB" class="method kb">KB모바일<br/>인증서</label>
+                    <label for="AuthToss" class="method toss">토스</label>
+                    <label for="AuthPass" class="method pass">통신사패스<br/><span>(SKT, KT, LGU+)</span></label>
+                    <div class="icons KB"></div>
+                    <div class="icons Toss"></div>
+                    <div class="icons Pass"></div>
+                </div>
+                <div id="LoginForm">
+                    <div class="inputBox">
+                        <div class="name">
+                            <p>
+                                <label for="userId">이름</label>
+                            </p>
+                            <div><input type="text" id="userId" placeholder="홍길동"/></div>
+                        </div>
+                        <div class="birth">
+                            <p>
+                                <label for="userBirthday">생년월일</label>
+                            </p>
+                            <div><input type="text" id="userBirthday" placeholder="19900101" /></div>
+                        </div>
+                        <div class="phone">
+                            <p>
+                                <label for="userPhone">휴대폰번호</label>
+                            </p>
+                            <div><select id="userPhone1">
+                                    <option value="010">010</option>
+                                    <option value="010">011</option>
+                                    <option value="010">016</option>
+                                    <option value="010">017</option>
+                                    <option value="010">018</option>
+                                    <option value="010">019</option>
+                                </select>
+                                <input type="text" id="userPhone2" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

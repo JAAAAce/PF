@@ -1,0 +1,51 @@
+@charset "utf-8";
+@import url(./reset.css);
+
+/* 공통속성 */
+
+/* 폰트
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Noto Sans KR', sans-serif; */
+
+/* 레이아웃 id로 적기 */
+body{width: 100%;}
+#skip{display: none;}
+#wrap{margin: 0 auto;}
+#wrap>#blackBox{margin: 195px 370px 400px 370px; background: rgba(34, 34, 34, .55); width: 1180px; height: 2087px; position: relative;}
+#loginBox{position: absolute; top: 578px; left: 260px; height: 803px; width: 660px; background: #fff;}
+#loginBox>.title{width: 660px; height: 52px; font-family: 'MalgunGothic'; font-size: 18px; letter-spacing: -0.45px; color: #fff; background: #222222; text-align: center; padding-top: 17px; box-sizing: border-box;}
+#loginBox>.iconBox{width: 660px; height: 325px; background: #ffffff;}
+#loginBox>.iconBox>.method{font-family: 'MalgunGothic'; font-size: 15px; letter-spacing: -0.38px; text-align: center; float: left; margin-top: 33px;}
+#loginBox>.iconBox>.naver{margin-left: 65px;}
+#loginBox>.iconBox>.shinhan{margin-left: 63px;}
+#loginBox>.iconBox>.samsung{margin-left: 55px;}
+#loginBox>.iconBox>.payco{margin-left: 69px;}
+#loginBox>.iconBox>.kakao{margin-left: 69px;}
+#loginBox>.iconBox>.icons{width: 65px; height: 65px; border: 1px solid #d8d8d8; border-radius: 23px; margin-top: 13px; float: left;}
+#loginBox>.iconBox>.Naver{clear: both; margin-left: 53px; background-image: url(../img/login\ icon6\ naver.png); background-size: 65px;}
+#loginBox>.iconBox>.Shinhan{margin-left: 55px; background-image: url(../img/login\ icon7\ shinhan.png); background-size: 65px;}
+#loginBox>.iconBox>.Samsung{margin-left: 55px; background-image: url(../img/login\ icon5\ samsung.png); background-size: 65px;}
+#loginBox>.iconBox>.Payco{margin-left: 55px; background-image: url(../img/login\ icon3\ payco.png); background-size: 65px;}
+#loginBox>.iconBox>.Kakao{margin-left: 55px; background-image: url(../img/login\ icon1\ kakao.png); background-size: 65px;}
+/* #loginBox>div>.first{clear: both;}
+#loginBox>div>.checker{padding-top: 189px; box-sizing: border-box; margin-right: 100px;} */
+#loginBox>.iconBox>.kb{margin-left: 56px; margin-top: 19px;}
+#loginBox>.iconBox>.toss{margin-left: 75px; margin-top: 29px;}
+#loginBox>.iconBox>.pass{margin-left: 69px; margin-top: 17px;}
+#loginBox>.iconBox>.pass>span{font-size: 11px; letter-spacing: -0.55px;}
+#loginBox>.iconBox>.KB{clear: both; margin-left: 53px; background-image: url(../img/login\ icon2\ kb.png); background-size: 65px;}
+#loginBox>.iconBox>.Toss{margin-left: 54px; background-image: url(../img/login\ icon8\ toss.png); background-size: 65px;}
+#loginBox>.iconBox>.Pass{margin-left: 54px; background-image: url(../img/login\ icon4\ pass.png); background-size: 65px;}
+
+#LoginForm{width: 660px; height: 370px; background: rgb(255, 255, 255);}
+#LoginForm>.inputBox{border-top: 1px solid #222222; margin: 0 30px;}
+#LoginForm>.inputBox>div>p{width: 180px; height: 53px; background: #f8f8f8; padding-top: 19px; padding-left: 21px; box-sizing: border-box; float: left;}
+
+#LoginForm>.inputBox>div>p>label{clear: both; font-family: 'MalgunGothic'; font-size: 16px; color: #222222; letter-spacing: -0.4px;}
+#LoginForm>.inputBox>div>div{float: left;}
+#LoginForm>.inputBox>div>div>input{margin-left: 10px; margin-top: 10px; border: 1px solid #b5b5b5; width: 140px; height: 36px;}
+#LoginForm>.inputBox>.birth>p{clear: both;}
+#LoginForm>.inputBox>.phone>p{clear: both;}
+#LoginForm>.inputBox>.phone>div>select{width: 80px; height: 36px; border: 1px solid #b5b5b5; border-radius: 5px; margin-left: 10px;}
+
+

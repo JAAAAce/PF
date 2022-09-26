@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="국민건강보험">
+    <meta name="subject" content="국민건강보험 로그인페이지">
+    <meta name="keyword" content="건강, 국민건강보험, 보험">
+    <meta name="description" content="국민건강보험 클론코딩입니다">
+    <meta name="author" content="김은진">
+    <meta name="publisher" content="김은진">
+    <title>국민건강보험</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css">
+    <link rel="stylesheet" href="./css/weather-icons.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment-with-locales.js"></script> 
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2b0ea9a68027f704d68976ba2dbd9a57"></script>
+    <script src="./js/script.js" defer></script>
+
+</head>
+
+<body>
+    <ul id="skip">
+        <li><a href="#nav">메뉴 바로가기</a></li>
+		<li><a href="#header">헤더 바로가기</a></li>
+		<li><a href="#content">내용 바로가기</a></li>
+	</ul>
+    <div id="wrap">
+        <div class="wideBg">
+            <div class="leftBg"></div>
+            <div class="rightBg"></div>
+        </div>
+        <div class="globalmenu">
+            <div class="gmu-inner cf">
+                <div class="topMenu">
+                    <ul class="top_left cf">
+                        <li>화면</li>
+                        <li><a href="javascript" title=""><img src="./img/btn increase.png" alt="화면키우기 버튼"></a></li>
+                        <li><a href="javascript" title=""><img src="./img/btn decrease.png" alt="화면줄이기 버튼"></a></li>
+                        <li>소리</li>
+                        <li><a href="javascript" title=""><img src="./img/btn increase.png" alt="소리키우기 버튼"></a></li>
+                        <li><a href="javascript" title=""><img src="./img/btn decrease.png" alt="소리줄이기 버튼"></a></li>
+                        <li><a href="javascript" title=""><img src="./img/btn sound.png" alt="스피커 온/오프 버튼"></a></li>
+                    </ul>
+                    <ul class="top_right">
+                        <li><a href="#" title="로그인">로그인</a></li>
+                        <li><a href="#" title="회원가입">회원가입</a></li>
+                        <li><a href="#" title="인증서안내">인증서안내</a></li>
+                        <li><a href="#" title="전체메뉴">전체메뉴</a></li>
+                        <li><a href="#" title="Language">Language<img src="./img/top carret down.png" alt="펼치기 버튼"></a></li>
+                        <li><a href="#" title="분야별업무사이트">분야별업무사이트<img src="./img/top carret down.png" alt="펼치기 버튼"></a></li>
+                    </ul>
+                </div>
+                <div class="container cf">
+                    <h1 class="logo"><a href="index.html"><img src="./img/logo01.png" alt="로고"></a></h1>
+                    <div id="nav" class="cf">
+                        <div class="nav_bg"></div>
+                        <ul class="menu cf">
+                            <li><a href="#" title="민원여기요">민원여기요</a>
+                                <img src="./img/icon_navi_left.png" alt="네비 배경 이미지">
+                                <ul>
+                                    <li><a href="#" title="민원안내">민원안내</a></li>
+                                    <li><a href="#" title="개인민원">개인민원</a></li>
+                                    <li><a href="#" title="사업장민원">사업장민원</a></li>
+                                    <li><a href="#" title="상담문의">상담문의</a></li>
+                                    <li><a href="#" title="신고센터">신고센터</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="건강iN">건강iN</a>
+                                <ul>
+                                    <li><a href="#" title="나의건강관리">나의건강관리</a></li>
+                                    <li><a href="#" title="가족건강관리">가족건강관리</a></li>
+                                    <li><a href="#" title="건강프로그램">건강프로그램</a></li>
+                                    <li><a href="#" title="건강생활">건강생활</a></li>
+                                    <li><a href="#" title="건강자료실">건강자료실</a></li>
+                                    <li><a href="#" title="검진기관/병원찾기">검진기관/병원찾기</a></li>
+                                    <li><a href="#" title="국민건강알람">국민건강알람</a></li>
+                                    <li><a href="#" title="건강생활실천지원금제">건강생활실천지원금제</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="정책센터">정책센터</a>
+                                <ul>
+                                    <li><a href="#" title="국민건강보험">국민건강보험</a></li>
+                                    <li><a href="#" title="노인장기요양보험">노인장기요양보험</a></li>
+                                    <li><a href="#" title="정책홍보관">정책홍보관</a></li>
+                                    <li><a href="#" title="사회보험통합징수">사회보험통합징수</a></li>
+                                    <li><a href="#" title="권리구제제도">권리구제제도</a></li>
+                                    <li><a href="#" title="법령정보 건강Law">법령정보 건강Law</a></li>
+                                    <li><a href="#" title="보건의료인력지원전문기관">보건의료인력지원전문기관</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="국민과함께">국민과함께</a>
+                                <ul>
+                                    <li><a href="#" title="정보공개">정보공개</a></li>
+                                    <li><a href="#" title="경영공시">경영공시</a></li>
+                                    <li><a href="#" title="국민참여">국민참여</a></li>
+                                    <li><a href="#" title="뉴스/소식">뉴스/소식</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="공단요모조모">공단요모조모</a>
+                                <ul>
+                                    <li><a href="#" title="공단소개">공단소개</a></li>
+                                    <li><a href="#" title="조직 및 인원">조직 및 인원</a></li>
+                                    <li><a href="#" title="홍보센터">홍보센터</a></li>
+                                    <li><a href="#" title="경영철학">경영철학</a></li>
+                                    <li><a href="#" title="사회공헌">사회공헌</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="freq">
+                            <div class="freq_bg"></div>
+                            <dl class="freq_menu cf">
+                                <dt>자주 찾는 메뉴</dt>
+                                <dd><a href="#" title="건강보험제도 유형">건강보험제도 유형</a></dd>
+                                <dd><a href="#" title="자격취득/가입">자격취득/가입</a></dd>
+                                <dd><a href="#" title="진료 및 투약정보">진료 및 투약정보</a></dd>
+                                <dd><a href="#" title="검진대상조회">검진대상조회</a></li></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="nav_icon cf">
+                        <button type="button" class="menu_search"><span class="ir_so">검색</span></button>
+                        <button type="button" class="menu_all"><span class="ir_so">전체메뉴</span></button>
+                    </div>   
+                </div>
+            </div>
+        </div> <!-- nav end -->
+        <div class="head_wrap">
+            <div id="header">
+                <div class="redsearch cf">
+                    <input type="text" name="search" id="forsearch" placeholder="무엇을 찾고 계시나요?">
+                    <label for="forsearch"></label>
+                    <a href="#" title="search"></a>
+                </div>
+                <div class="slidebanner">
+                    <div class="slb_img">
+                        <ul class="cf">
+                            <li><a href="#"><img src="./img/banner_pc01.jpg" alt="슬라이드배너 이미지1"></a></li>
+                            <li><a href="#"><img src="./img/banner_pc02.png" alt="슬라이드배너 이미지2"></a></li>
+                            <li><a href="#"><img src="./img/banner_pc03.png" alt="슬라이드배너 이미지3"></a></li>
+                            <li><a href="#"><img src="./img/banner_pc04.png" alt="슬라이드배너 이미지4"></a></li>
+                            <li><a href="#"><img src="./img/banner_pc05.png" alt="슬라이드배너 이미지5"></a></li>
+                            <li><a href="#"><img src="./img/banner_pc06.png" alt="슬라이드배너 이미지6"></a></li>
+                            <li><a href="#"><img src="./img/banner_pc07.png" alt="슬라이드배너 이미지7"></a></li>
+                            <li><a href="#"><img src="./img/banner_pc08.png" alt="슬라이드배너 이미지8"></a></li>
+                            <li><a href="#"><img src="./img/banner_pc09.png" alt="슬라이드배너 이미지9"></a></li>
+                            <li><a href="#"><img src="./img/banner_pc10.png" alt="슬라이드배너 이미지10"></a></li>
+                            <li><a href="#"><img src="./img/banner_pc11.png" alt="슬라이드배너 이미지11"></a></li>
+                            <li><a href="#"><img src="./img/banner_pc12.png" alt="슬라이드배너 이미지12"></a></li>
+                            <li><a href="#"><img src="./img/banner_pc13.png" alt="슬라이드배너 이미지13"></a></li>
+                            <li><a href="#"><img src="./img/banner_pc14.png" alt="슬라이드배너 이미지14"></a></li>
+                            <li><a href="#"><img src="./img/banner_pc15.png" alt="슬라이드배너 이미지15"></a></li>
+                            <li><a href="#"><img src="./img/banner_pc16.png" alt="슬라이드배너 이미지16"></a></li>
+                            <li><a href="#"><img src="./img/banner_pc17.png" alt="슬라이드배너 이미지17"></a></li>
+                        </ul>
+                    </div>
+                    <div class="slb_func cf">
+                        <div class="slb_num">
+                            <span><em>1</em>/<em>17</em></span>
+                        </div>
+                        <div class="slb_control cf">
+                            <ul>
+                                <li class="slb_pre"><a href="#"><span class="ir_pm">이전 이미지</span></a></li>
+                                <li class="slb_pause"><a href="#"><span class="ir_pm">정지</span></a></li>
+                                <li class="slb_next"><a href="#"><span class="ir_pm">다음 이미지</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="for_visitors cf">
+                    <div class="cf">
+                        <h2>방문자별 맞춤 메뉴</h2>
+                        <span class="toggle"><button class="individual">개인</button class="business"><button>사업장</button></span>
+                    </div>
+                    <span><a href="#" title="더보기+">더보기+</a></span>
+                    <div class="menuBox">
+                        <ul class="cf">
+                            <li class="ind_menu1 cf">
+                                <a href="#" title="자격득실 확인서 발급">
+                                    <span></span>
+                                    <p>자격득실<br>확인서 발급</p>
+                                </a>
+                            </li>
+                            <li class="ind_menu2">
+                                <a href="#" title="보험료 납부확인서">
+                                    <span></span>
+                                    <p>보험료<br>납부확인서</p>
+                                </a>
+                            </li>
+                            <li class="ind_menu3">
+                                <a href="#" title="환급금 조회/신청">
+                                    <span></span>
+                                    <p>환급금<br>조회/신청</p>
+                                </a>
+                            </li>
+                            <li class="ind_menu4">
+                                <a href="#" title="보험료 조회/납부">
+                                    <span></span>
+                                    <p>보험료<br>조회/납부</p>
+                                </a>
+                            </li>
+                            <li class="ind_menu5">
+                                <a href="#" title="보험료 계산기">
+                                    <span></span>
+                                    <p>보험료<br>계산기</p>
+                                </a>
+                            </li>
+                            <li class="ind_menu6">
+                                <a href="#" title="재난적의료비 지원안내">
+                                    <span></span>
+                                    <p>재난적의료비<br>지원안내</p>
+                                </a>
+                            </li>
+                            <li class="ind_menu7">
+                                <a href="#" title="건강검진 대상조회">
+                                    <span></span>
+                                    <p>건강검진<br>대상조회</p>
+                                </a>
+                            </li>
+                            <li class="ind_menu8">
+                                <a href="#" title="가족 건강관리">
+                                    <span></span>
+                                    <p>가족<br>건강관리</p>
+                                </a>
+                            </li>
+                            <li class="ind_menu9">
+                                <a href="#" title="민원 서식자료실">
+                                    <span></span>
+                                    <p>민원<br>서식자료실</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="welcome">
+                    <div class="wc_func cf">
+                        <div class="wc_num">
+                            <span><em>1</em>/<em>1</em></span>
+                        </div>
+                        <ul class="wc_control">
+                            <li class="wc_pause"><a href="#"><span class="ir_pm">정지</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="wc_banner cf">
+                        <p class="wc_bg">
+                            <span class="hi">안녕하세요</span>
+                            <span class="wc_message">공단홈페이지 방문을 환영합니다.</span>
+                        </p>
+                        <div class="wc_updown cf">
+                            <a href="#" class="wc_up"><span class="ir_pm">상단 배너</span></a>
+                            <a href="#" class="wc_down"><span class="ir_pm">하단 배너</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec_wrap">
+            <div class="section cf">
+                <div id="content">
+                    <div class="notice">
+                        <ul>
+                            <li><a href="#" title="공지사항">공지사항<img src="./img/icon news area 01.png" alt="공지사항 아이콘"></a></li>
+                            <li><a href="#" title="채용공고">채용공고<img src="./img/icon news area 02.png" alt="채용공고 아이콘"></a></li>
+                            <li><a href="#" title="보도자료">보도자료<img src="./img/icon news area 03.png" alt="보도자료 아이콘"></a></li>
+                            <li><a href="#" title="입찰공고">입찰공고<img src="./img/icon news area 04.png" alt="입찰공고 아이콘"></a></li>
+                            <li><a href="#" title="경영공시">경영공시<img src="./img/icon news area 05.png" alt="경영공시 아이콘"></a></li>
+                        </ul>
+                    </div>
+                    <div class="health_info">
+                        <p>건강정보</p>
+                        <ul>
+                            <li><a href="#" title="가까운 병의원 찾기">가까운 병의원 찾기<img src="./img/arrow_health.png" alt="바로가기"></a></li>
+                            <li><a href="#" title="검진기관 찾기">검진기관 찾기<img src="./img/arrow_health.png" alt="바로가기"></a></li>
+                            <li><a href="#" title="건강뉴스">건강뉴스<img src="./img/arrow_health.png" alt="바로가기"></a></li>
+                            <li><a href="#" title="건강웹툰">건강웹툰<img src="./img/arrow_health.png" alt="바로가기"></a></li>
+                        </ul>
+                    </div>
+                    <div class="policy">
+                        <div class="pol_tit cf">
+                            <img src="./img/ico notice.png" alt="주요정책 아이콘">
+                            <p>알아두면 건강해지는 건강보험공단<br/><strong>주요정책</strong></p>
+                        </div>
+                        <ul>
+                            <li class="focused"><a href="#">소중한 나의 가족! 건강관리 쉽게 하는 방법은 없을까요?</a></li>
+                            <li><a href="#">내가 받는 건강 보험료 혜택! 얼마나 될까요?</a></li>
+                            <li><a href="#">공단은 지역사회에서 어떤 일을 할까요?</a></li>
+                            <li><a href="#">내 건강보험료는 어떻게 책정되었을까요?</a></li>
+                        </ul>
+                    </div>
+                    <div class="health_alarm">
+                        <p>국민건강 알람서비스</p>
+                        <a href="#">2022.05.25<img src="./img/arrow_health.png" alt="바로가기"><br/>전국기준</a>
+                        <div class="graph">
+                            <img src="./img/health graph.png" alt="국민건강 그래프">
+                            <span>관심<br/><strong>50</strong></span>
+                            <ul class="cf">
+                                <li><button>감기</button></li>
+                                <li><button>눈병</button></li>
+                                <li><button>식중독</button></li>
+                                <li><button>천식</button></li>
+                                <li><button>피부염</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="place">
+                        <div class="organize">
+                            <dl>
+                                <dt>조직도</dt>
+                                <dd>국민건강보험공단의<br/>부서별 조직도를 확인해보세요.</dd>
+                            </dl>
+                        </div>
+                        <div class="find_place">
+                            <dl>
+                                <dt>지사찾기</dt>
+                                <dd>가까운 지사를 방문하시면<br/>민원업무를 처리하실 수 있습니다</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div id="aside">
+                    <div class="guarantee">
+                        <dl>
+                            <dt>보장성강화</dt>
+                            <dd>병원비 걱정없는 든든한 나라<br/>건강보험 보장성강화 대책을 알아보세요!</dd>
+                        </dl>
+                        <dl>
+                            <dt>건강보험연구원</dt>
+                            <dd>Health Insurance Research<br/>Institute(HIRI)</dd>
+                        </dl>
+                    </div>
+                    <div class="event cf">
+                        <p>이벤트</p>
+                        <div class="ev_func cf">
+                            <div class="event_num">
+                                <span><em>1</em>/<em>2</em></span>
+                            </div>
+                            <div class="ev_control">
+                                <ul class="cf">
+                                    <li class="ev_pre"><a href="#"><span class="ir_pm">이전 이미지</span></a></li>
+                                    <li class="ev_pause"><a href="#"><span class="ir_pm">정지</span></a></li>
+                                    <li class="ev_next"><a href="#"><span class="ir_pm">다음 이미지</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ev_img">
+                            <ul class="cf">
+                                <li><a href="#"><img src="./img/event slide01.png" alt="이벤트 배너 이미지1"></a></li>
+                                <li><a href="#"><img src="./img/event slide02.png" alt="이벤트 배너 이미지2"></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="promo cf">
+                        <p>홍보존</p>
+                        <div class="pr_func cf">
+                            <div class="pr_num">
+                                <span><em>1</em>/<em>3</em></span>
+                            </div>
+                            <div class="pr_control">
+                                <ul class="cf">
+                                    <li class="pr_pre"><a href="#"><span class="ir_pm">이전 이미지</span></a></li>
+                                    <li class="pr_pause"><a href="#"><span class="ir_pm">정지</span></a></li>
+                                    <li class="pr_next"><a href="#"><span class="ir_pm">다음 이미지</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pr_img">
+                            <ul class="cf">
+                                <li><a href="#"><img src="./img/promotion slide01.png" alt="홍보 배너 이미지1"></a></li>
+                                <li><a href="#"><img src="./img/promotion slide02.png" alt="홍보 배너 이미지2"></a></li>
+                                <li><a href="#"><img src="./img/promotion slide03.png" alt="홍보 배너 이미지3"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="api_practice">
+                    <div class="now_weather">
+                        <div class="w_seoul">
+                            <div class="ccity">서울</div>
+                            <div class="ctemp"></div>
+                            <div class="cicon"></div>
+                        </div>
+                        <div class="w_suwon">
+                            <div class="ccity">수원</div>
+                            <div class="ctemp"></div>
+                            <div class="cicon"></div>
+                        </div>
+                        <div class="w_gwangju">
+                            <div class="ccity">광주</div>
+                            <div class="ctemp"></div>
+                            <div class="cicon"></div>
+                        </div>
+                        <div class="w_busan">
+                            <div class="ccity">부산</div>
+                            <div class="ctemp"></div>
+                            <div class="cicon"></div>
+                        </div>
+                        <div class="w_daegu">
+                            <div class="ccity">대구</div>
+                            <div class="ctemp"></div>
+                            <div class="cicon"></div>
+                        </div>
+                        <div class="w_jeju">
+                            <div class="ccity">제주</div>
+                            <div class="ctemp"></div>
+                            <div class="cicon"></div>
+                        </div>
+                    </div>
+                    <div class="now_news">
+                        <div class="health_news"></div>
+                    </div>
+                    <div class="spec_map">
+                        <div id="map" style="width:320px;height:240px;"></div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="customer">
+                        <p>고객센터</p>
+                        <div class="phone cf">
+                            <dl>
+                                <dt>1577-1000
+                                    <span>(해외이용 : 82-33-811-2001)</span>
+                                </dt>
+                                <dd>업무 시간 09:00~18:00</dd>
+                                <dd class="small">(이용료: 발신자 부담)</dd>
+                            </dl>
+                            <img src="./img/i-customer-1.png" alt="고객센터 아이콘">
+                        </div>
+                        <div class="foreigner cf">
+                            <p>외국인 민원센터</p>
+                            <img src="./img/i-customer-2.png" alt="외국인 민원센터 아이콘">
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <p>소식지 신청/해지</p>
+                        <div class="cf">
+                            <img src="./img/i-customer-3.png" alt="소식지 아이콘">
+                            <span>더 빠르게<br/>건강보험 정책과<br/>정보를 제공합니다.</span>
+                        </div>
+                    </div>
+                    <div class="app cf">
+                        <p>APP 다운로드</p>
+                        <div class="android">
+                            <div class="qr_bg">
+                                <img src="./img/qr-android.png" alt="안드로이드 큐알코드">
+                            </div>
+                            <span>Android</span>
+                        </div>
+                        <div class="ios">
+                            <div class="qr_bg">
+                                <img src="./img/qr-ios.png" alt="ios 큐알코드">
+                            </div>
+                            <span>iOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="f_wrap">
+            <div id="footer">
+                <div class="f_upper cf">
+                    <ul class="cf">
+                        <li><a href="#" title="이용약관">이용약관</a></li>
+                        <li><a href="#" title="영상정보처리기기 운영지침">영상정보처리기기 운영지침</a></li>
+                        <li><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+                        <li><a href="#" title="온라인도우미">온라인도우미</a></li>
+                    </ul>
+                    <div class="move_right cf">
+                        <div class="cf">
+                            <button>내부관련사이트</button>
+                            <a href="#" title="새창으로 열기">이동</a>
+                        </div>
+                        <div class="relate cf">
+                            <button>관련사이트</button>
+                            <a href="#" title="새창으로 열기">이동</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="f_lower cf">
+                    <div class="address">
+                        <p>본 홈페이지에 게시된 이메일주소가 수집되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+                        <p>26464 강원도 원주시 건강로 32(반곡동) 국민건강보험공단 고객센터 :1577-1000(발신자 부담) 업무시간 : 09시~18시(월~금)</p>
+                        <p>Copyright @ 2020 by National Health Insurance Service. All rights reserved.</p>
+                    </div>
+                    <div class="link_right">
+                        <ul class="cert cf">
+                            <li class="cert_1"><a href="#" title="고객만족경영체계 새창열기"><span class="ir_pm">평생건강 With You</span></a></li>
+                            <li class="cert_2"><a href="#" title="개인정보보호 우수 웹&middot;시스템 새창열기"><span class="ir_pm">개인정보보호 우수 웹&middot;시스템</span></a></li>
+                            <li class="cert_3"><a href="#" title="정보보호 및 개인정보보호 관리체계(ISMS-P) 인증 마크"><span class="ir_pm">정보보호 및 개인정보보호 관리체계(ISMS-P) 인증서 보기</span></a></li>
+                            <li class="cert_4"><a href="#" title="웹 접근성 품질인증서 새창열기"><span class="ir_pm">웹 접근성 품질인증서</span></a></li>
+                        </ul>
+                        <ul class="sns cf">
+                            <li class="sns_n"><a href="#" title="네이버 블로그 새창열기"><span class="ir_pm">네이버 블로그</span></a></li>
+                            <li class="sns_d"><a href="#" title="다음 블로그 새창열기"><span class="ir_pm">다음 블로그</span></a></li>
+                            <li class="sns_f"><a href="#" title="페이스북 새창열기"><span class="ir_pm">페이스북</span></a></li>
+                            <li class="sns_k"><a href="#" title="카카오스토리 새창열기"><span class="ir_pm">카카오스토리</span></a></li>
+                            <li class="sns_y"><a href="#" title="유튜브 새창열기"><span class="ir_pm">유튜브</span></a></li>
+                            <li class="sns_i"><a href="#" title="인스타그램 새창열기"><span class="ir_pm">인스타그램</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

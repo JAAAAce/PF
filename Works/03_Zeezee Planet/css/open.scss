@@ -1,0 +1,52 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'SLEIGothicTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SLEIGothicTTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{font-family: 'SLEIGothicTTF', sans-serif; font-size: 13px; user-select: none; -ms-overflow-style: none;}
+::-webkit-scrollbar {display: none;}
+$primary: #e1d4c3;
+$variant: #a78a6c;
+$black: #000000;
+$darkgray: #667085;
+$lightgray: #dfdfdf;
+$red: #ef4c4a;
+$lavender: #e2dcf6;
+$white: #fff;
+
+
+
+.loading{width: 100vw; height: 100vh; background: $primary; box-sizing: border-box; position: fixed; left: 0; top: 0; z-index: 200;
+    .logo-area{
+        img{position: relative; left: 50%; transform: translateX(-50%); padding-top: 200px;}
+    }
+    .hearts{display: flex; justify-content: center; margin-top: 50px;
+        li{
+            span{width: 24px; height: 24px; display: block; background: url(../img/Icons_Light_Heart.png) center center no-repeat;}
+            .heart1{background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;}
+            .heart2{animation: heart2 5s .3s ease-out;}
+            .heart3{animation: heart3 5s .6s ease-out;}
+            .heart4{animation: heart4 5s .9s ease-out;}
+            .heart5{animation: heart5 5s 1.2s ease-out;}
+        }
+    }
+}
+
+@keyframes heart2 {
+    10% {background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;}
+    100% {background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;}
+}
+@keyframes heart3 {
+    10% {background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;}
+    100% {background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;}
+}
+@keyframes heart4 {
+    10% {background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;}
+    100% {background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;}
+}
+@keyframes heart5 {
+    10% {background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;}
+    100% {background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;}
+}

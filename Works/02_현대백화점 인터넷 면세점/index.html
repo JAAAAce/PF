@@ -1,0 +1,1057 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title>현대백화점 인터넷면세점</title>
+	<meta charset='utf-8'>
+	<meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+	<meta name='Title' content='현대백화점 인터넷면세점'>
+	<meta name='Subject' content='현대백화점 인터넷면세점 반응형 메인페이지'>
+	<meta name='Keywords' content='백화점, 현대백화점, 면세, 면세점, 쇼핑, 환율'>
+	<meta name='Publisher' content='김은진'>
+	<meta name='Description' content='현대백화점 인터넷면세점 메인페이지 클론코딩입니다. 반응형으로 리디자인하였습니다.'>
+	<meta name='Author-Date' content='2022.07.20'>
+	<meta name='Robots' content='index,follow'>
+
+	<link rel='stylesheet' href='css/reset.css'>
+	<link rel='stylesheet' href='css/style.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<link href='https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet'>
+	<script src='js/jquery-2.2.4.min.js'></script>
+    <script src='js/jquery.easing.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/script.js" defer></script>
+</head>
+
+<body>
+	<ul id="skip">
+		<li><a href="#header">헤더 바로가기</a></li>
+		<li><a href="#nav">메뉴 바로가기</a></li>
+		<li><a href="#content">내용 바로가기</a></li>
+	</ul>
+    <!-- 모바일 -->
+	<!-- 숨어있는 메뉴 -->
+    <div class="mobMenu">
+        <div class="closeBtn">
+            <a href="javascript:void(0);" class="close"></a>
+        </div>
+        <ul class="iconMenu">
+            <li><span class="orderIco"></span><a>주문내역</a></li>
+            <li><span class="timeIco"></span><a>주문<br/>가능시간</a></li>
+            <li><span class="flightIco"></span><a>출국정보</a></li>
+            <li><span class="passIco"></span><a>여권정보</a></li>
+        </ul>
+        <div class="allMenu menu">
+            <div class="menuTit">
+                <em>전체서비스</em>
+                <a href="javascript:" class="menuBtn menuBtn1 fold"></a>
+            </div>
+            <ul class="all">
+                <li><a href="javascript:">세일</a></li>
+                <li><a href="javascript:">베스트</a></li>
+                <li><a href="javascript:">이벤트</a></li>
+                <li><a href="javascript:">기획전</a></li>
+                <li><a href="javascript:">쿠폰</a></li>
+                <li><a href="javascript:">신상품</a></li>
+                <li><a href="javascript:">H.COS Club</a></li>
+                <li><a href="javascript:">Club Travel</a></li>
+                <li><a href="javascript:">스페셜오더</a></li>
+                <li><a href="javascript:">웨딩샵</a></li>
+                <li><a href="javascript:">출국없는 면세쇼핑</a></li>
+                <li><a href="javascript:">H.LUXURY</a></li>
+                <li><a href="javascript:">H.AMORNY(우수 중소기업 브랜드관)</a></li>
+                <li><a href="javascript:">❤H.OUTLET(시즌오프)❤</a></li>
+                <li><a href="javascript:">❤화장품 클리어런스 大세일❤</a></li>
+            </ul>
+        </div>
+        <div class="category menu">
+            <div class="menuTit">
+                <em>카테고리</em>
+                <a href="javascript:" class="menuBtn menuBtn2"></a>
+            </div>
+            <ul class="categoryList closed">
+                <li><a href="javascript:">스킨케어</a></li>
+                <li><a href="javascript:">메이크업</a></li>
+                <li><a href="javascript:">향수/헤어/바디</a></li>
+                <li><a href="javascript:">가방/지갑</a></li>
+                <li><a href="javascript:">시계/쥬얼리</a></li>
+                <li><a href="javascript:">패션/잡화</a></li>
+                <li><a href="javascript:">전자/리빙</a></li>
+                <li><a href="javascript:">식품</a></li>
+                <li><a href="javascript:">유아동</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="headerWrap">
+            <div id="header" class="headerArea">
+                <div class="headerLeft">
+                    <div class="goMenu">
+                        <a href="javascript:"><img src="./images/icon/btn_drawer.png" alt="메뉴"></a>
+                    </div>
+                    <h1 class="logo"><a href="index.html" title="홈 바로가기"><img src="../02_현대백화점 인터넷 면세점/images/logo_move.png" alt="로고"></a></h1>
+                    <div class="search">
+                        <div class="searchBox">
+                            <a href="javascript:"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="headerRight">
+                    <ul class="iconList">
+                        <li><a href="javascript:">로그인</a></li>
+                        <li><a href="javascript:">회원가입</a></li>
+                        <li><a href="javascript:" class="shopIco"></a></li>
+                        <li><a href="javascript:" class="delivIco"></a></li>
+                        <li><a href="javascript:" class="persIco"></a></li>
+                        <li><a href="javascript:">$1 = 1312.9 원</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mainBannerWrap">
+            <div class="mainBanner">
+                <div class="swiper mySwiper mainSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/banner/main slide01.gif" alt="배너1"></div>
+                        <div class="swiper-slide"><p>VACANCE BOOK<br/>완벽한 여름을 위한 아이템<span>TAKE A DAY OFF</span></p><img src="./images/banner/main slide02.jpg" alt="배너2"></div>
+                        <div class="swiper-slide"><p>구매고객 대상<br/>전시회티켓 증정<span>호안미로 전시회 티켓 선착순 증정!</span></p><img src="./images/banner/main slide04.jpg" alt="배너3"></div>
+                        <div class="swiper-slide"><p>H.COS 신규회원 전용<br/>선착순 경품 혜택<span>마일즈알드리지 입장권 선착순 증정!</span></p><img src="./images/banner/main slide05.jpg" alt="배너4"></div>
+                    </div>
+                </div>
+                <div class="mainSwiper-control">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="pauseBtn-box">
+                        <div class="pauseBtn"></div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="navWrap">
+            <div id="nav" class="navArea">
+                <div class="navBanner">
+                    <div class="swiper mySwiper navSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/banner/menu slide01.jpg" alt="menu1"><p>H.COS FACE 가상 메이크업 체험</p></div>
+                            <div class="swiper-slide"><img src="./images/banner/menu slide02.jpg" alt="menu2"><p>수입화장품 CLEARANCE 세일관</p></div>
+                            <div class="swiper-slide"><img src="./images/banner/menu slide03.jpg" alt="menu3"><p>H아울렛</p></div>
+                            <div class="swiper-slide"><img src="./images/banner/menu slide04.jpg" alt="menu4"><p>출국없는 면세쇼핑</p></div>
+                            <div class="swiper-slide"><img src="./images/banner/menu slide05.jpg" alt="menu5"><p>[크리니크]노란 스폰지로션트리오</p></div>
+                            <div class="swiper-slide"><img src="./images/banner/menu slide06.jpg" alt="menu6"><p>[Estee Lauder] 럭셔리 프래그런스 컬렉션</p></div>
+                            <div class="swiper-slide"><img src="./images/banner/menu slide07.jpg" alt="menu7"><p>[LA MER] NEW 어드밴스드 트리트먼트 …</p></div>
+                            <div class="swiper-slide"><img src="./images/banner/menu slide08.jpg" alt="menu8"><p>아르망 드 브리냑 시내면세점 단독</p></div>
+                            <div class="swiper-slide"><img src="./images/banner/menu slide09.jpg" alt="menu9"><p>#인스타그램</p></div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentWrap">
+            <div id="content" class="contentArea">
+                <div class="contentBanner">
+                    <h2 class="contentTitle">럭키딜</h2>
+                    <div class="swiper mySwiper luckySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slideImgBox">
+                                    <div class="line"></div>
+                                    <span><em>50</em>%</span>
+                                    <img src="./images/md/lucky1.jpg" alt="럭키딜 상품1">
+                                </div>
+                                <div class="MDBox">
+                                    <p class="MDTitle">롱샴</p>
+                                    <p class="MDContent">르 플리아쥬 뀌르</p>
+                                </div>
+                                <div class="prevPrice">
+                                    <span class="deleted">$385</span>
+                                    <span class="discount">50%</span>
+                                </div>
+                                <div class="actualPrice">
+                                    <span class="price_dollar">$192.5</span>
+                                    <span class="price_won">250,365원</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slideImgBox">
+                                    <div class="line"></div>
+                                    <span><em>45</em>%</span>
+                                    <img src="./images/md/lucky2.jpg" alt="럭키딜 상품2">
+                                </div>
+                                <div class="MDBox">
+                                    <p class="MDTitle">시티즌</p>
+                                    <p class="MDContent">MECHANICAL_NH8350-59BB</p>
+                                </div>
+                                <div class="prevPrice">
+                                    <span class="deleted">$201</span>
+                                    <span class="discount">45%</span>
+                                </div>
+                                <div class="actualPrice">
+                                    <span class="price_dollar">$110.55</span>
+                                    <span class="price_won">143,781원</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slideImgBox">
+                                    <div class="line"></div>
+                                    <span><em>30</em>%</span>
+                                    <img src="./images/md/lucky3.jpg" alt="럭키딜 상품3">
+                                </div>
+                                <div class="MDBox">
+                                    <p class="MDTitle">르 라보</p>
+                                    <p class="MDContent">상탈 33 EDP 50ml</p>
+                                </div>
+                                <div class="prevPrice">
+                                    <span class="deleted">$193</span>
+                                    <span class="discount">30%</span>
+                                </div>
+                                <div class="actualPrice">
+                                    <span class="price_dollar">$135.1</span>
+                                    <span class="price_won">175,711원</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slideImgBox">
+                                    <div class="line"></div>
+                                    <span><em>30</em>%</span>
+                                    <img src="./images/md/lucky4.jpg" alt="럭키딜 상품4">
+                                </div>
+                                <div class="MDBox">
+                                    <p class="MDTitle">킬리안</p>
+                                    <p class="MDContent">GOOD GIRL GONE BAD REFILLABLE PERFUME & COFFRET</p>
+                                </div>
+                                <div class="prevPrice">
+                                    <span class="deleted">$286</span>
+                                    <span class="discount">30%</span>
+                                </div>
+                                <div class="actualPrice">
+                                    <span class="price_dollar">$200.2</span>
+                                    <span class="price_won">260,380원</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slideImgBox">
+                                    <div class="line"></div>
+                                    <span><em>10</em>%</span>
+                                    <img src="./images/md/lucky5.jpg" alt="럭키딜 상품5">
+                                </div>
+                                <div class="MDBox">
+                                    <p class="MDTitle">코치</p>
+                                    <p class="MDContent">C6641 B4/HA-22SS / STUDIO SHOULDER BAG</p>
+                                </div>
+                                <div class="prevPrice">
+                                    <span class="deleted">$550</span>
+                                    <span class="discount">10%</span>
+                                </div>
+                                <div class="actualPrice">
+                                    <span class="price_dollar">$495</span>
+                                    <span class="price_won">643,797원</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="timeBannerZone">
+                    <div class="timeBanner">
+                        <h2 class="contentTitle">TIME SALE</h2>
+                        <div class="swiper mySwiper timeSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="timeSaleBox">
+                                        <img src="./images/md/time1.jpg" alt="타임세일 이미지1">
+                                        <div class="msgBox">
+                                            <p class="timeMD">30% SALE<br/>르 라보</p>
+                                            <span class="dot"></span>
+                                            <p class="timeLimit">06 : 28 : 26</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="timeSaleBox">
+                                        <img src="./images/md/time2.jpg" alt="타임세일 이미지2">
+                                        <div class="msgBox">
+                                            <p class="timeMD">30% SALE<br/>구찌 PERFUME </p>
+                                            <span class="dot"></span>
+                                            <p class="timeLimit">06 : 28 : 26</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="timeSaleBox">
+                                        <img src="./images/md/time3.jpg" alt="타임세일 이미지3">
+                                        <div class="msgBox">
+                                            <p class="timeMD">30% SALE<br/>맥</p>
+                                            <span class="dot"></span>
+                                            <p class="timeLimit">06 : 28 : 26</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="timeSaleBox">
+                                        <img src="./images/md/time4.jpg" alt="타임세일 이미지4">
+                                        <div class="msgBox">
+                                            <p class="timeMD">30% SALE<br/>랑콤</p>
+                                            <span class="dot"></span>
+                                            <p class="timeLimit">06 : 28 : 26</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="themeMDWrap">
+                    <div class="themeMDZone">
+                        <div class="themebanner">
+                            <img src="./images/banner/mdBanner1.jpg" alt="바캉스룩">
+                            <h3># 바캉스룩</h3>
+                            <span class="btn openBtn"></span>
+                        </div>
+                        <div class="themeMDBox openStatus">
+                            <ul class="MDList">
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/vacance1.jpg" alt="바캉스 상품1">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">화이트샌즈</p>
+                                        <p class="MDContent">카일라 이태리 통가죽 스트랩 네츄럴/네이비</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$385</span>
+                                        <span class="discount">30%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$38.5</span>
+                                        <span class="price_won">50,073원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                        <div><span>품절임박</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/vacance2.jpg" alt="바캉스 상품2">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">멀버리</p>
+                                        <p class="MDContent">Sadie Square High Shine Leather RL7365/213H687</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$1,124</span>
+                                        <span class="discount">5%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$1067.8</span>
+                                        <span class="price_won">1,401,914원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>품절임박</span></div>
+                                        <div><span>신상품</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/vacance3.jpg" alt="바캉스 상품3">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">멀버리</p>
+                                        <p class="MDContent">Colour Block Bag Scarf 5x85 VS4674/796Q710</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$91</span>
+                                        <span class="discount">5%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$86.45</span>
+                                        <span class="price_won">113,500원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/vacance4.jpg" alt="바캉스 상품4">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">에트로</p>
+                                        <p class="MDContent">DRESS</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$1,167</span>
+                                        <span class="discount">30%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$816.9</span>
+                                        <span class="price_won">1,066,789원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                        <div><span>품절임박</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/vacance5.jpg" alt="바캉스 상품5">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">화이트샌즈</p>
+                                        <p class="MDContent">국민 모자 프로젝트 롤업 썬캡 화이트</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$29</span>
+                                        <span class="discount">30%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$20.3</span>
+                                        <span class="price_won">26,649원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/vacance6.jpg" alt="바캉스 상품6">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">에코</p>
+                                        <p class="MDContent">ECCO 여성 샌들 플래쉬 243913-02212_EU37</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$181</span>
+                                        <span class="discount">40%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$108.6</span>
+                                        <span class="price_won">142,570원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                        <div><span>품절임박</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/vacance7.jpg" alt="바캉스 상품7">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">에코</p>
+                                        <p class="MDContent">ECCO 여성 샌들 플래쉬_EU36</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$181</span>
+                                        <span class="discount">40%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$108.6</span>
+                                        <span class="price_won">142,570원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/vacance8.jpg" alt="바캉스 상품8">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">토마스베일리</p>
+                                        <p class="MDContent">라피아햇 프리메르 베이지</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$46</span>
+                                        <span class="discount">30%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$32.2</span>
+                                        <span class="price_won">42,272원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="more">
+                                <span>더보기</span>
+                                <div class="moreBtn"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="themeMDZone">
+                        <div class="themebanner">
+                            <img src="./images/banner/mdBanner2.jpg" alt="여행필수아이템">
+                            <h3># 여행필수아이템</h3>
+                            <span class="btn closeBtn unfold"></span>
+                        </div>
+                        <div class="themeMDBox closeStatus hidden">
+                            <ul class="MDList">
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/travel1.jpg" alt="여행 상품1">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">생로랑 아이웨어</p>
+                                        <p class="MDContent">SL 360-001</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$365</span>
+                                        <span class="discount">55%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$164.25</span>
+                                        <span class="price_won">215,627원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/travel2.jpg" alt="여행 상품2">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">투미</p>
+                                        <p class="MDContent">기내용 19 DEGREE ALUMINUM INTERNATIONAL CARRY-ON</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted"></span>
+                                        <span class="discount"></span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$995</span>
+                                        <span class="price_won">1,306,236원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/travel3.jpg" alt="여행 상품3">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">아메리칸 투어리스터</p>
+                                        <p class="MDContent">GROOVISTA SPINNER 76/28 TSA JET BLACK</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$181</span>
+                                        <span class="discount">30%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$126.7</span>
+                                        <span class="price_won">166,331원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/travel4.jpg" alt="여행 상품4">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">엑토</p>
+                                        <p class="MDContent">글로벌 여행용 어댑터</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$18</span>
+                                        <span class="discount">20%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$14.4</span>
+                                        <span class="price_won">18,904원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/travel5.jpg" alt="여행 상품5">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">샤오미</p>
+                                        <p class="MDContent">삼각대 셀카봉 블랙</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$25</span>
+                                        <span class="discount">30%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$17.5</span>
+                                        <span class="price_won">22,974원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/travel6.jpg" alt="여행 상품6">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">샤오미</p>
+                                        <p class="MDContent">[미지아] 액션캠 4K</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$145</span>
+                                        <span class="discount">30%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$101.5</span>
+                                        <span class="price_won">133,249</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/travel7.jpg" alt="여행 상품7">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">투미</p>
+                                        <p class="MDContent">Alpha Passport Case</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$181</span>
+                                        <span class="discount">40%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$140</span>
+                                        <span class="price_won">183,792원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/travel8.jpg" alt="여행 상품8">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">비츠</p>
+                                        <p class="MDContent">스튜디오3 무선 오버이어 헤드폰-Matte Black</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$374</span>
+                                        <span class="discount">5%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$355.3</span>
+                                        <span class="price_won">466,437원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>품절임박</span></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="more">
+                                <span>더보기</span>
+                                <div class="moreBtn"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="themeMDZone">
+                        <div class="themebanner">
+                            <img src="./images/banner/mdBanner3.jpg" alt="VIVIDCOLORS">
+                            <h3># VIVIDCOLORS</h3>
+                            <span class="btn closeBtn unfold"></span>
+                        </div>
+                        <div class="themeMDBox closeStatus hidden">
+                            <ul class="MDList">
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/vivid1.jpg" alt="선명한색상 상품1">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">멀버리</p>
+                                        <p class="MDContent">Sml Darley Shoulder Bag Heavy Grain HH6191/736U693</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$920</span>
+                                        <span class="discount">30%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$644</span>
+                                        <span class="price_won">845,443원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                        <div><span>품절임박</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/vivid2.jpg" alt="선명한색상 상품2">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">스튜어트 와이츠먼</p>
+                                        <p class="MDContent">S2301 A26 6.5 D /SIMPLE Lipstick Red Suede 37</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted"></span>
+                                        <span class="discount"></span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$425</span>
+                                        <span class="price_won">557,940원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/vivid3.jpg" alt="선명한색상 상품3">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">덱케</p>
+                                        <p class="MDContent">리프 카드지갑</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$65</span>
+                                        <span class="discount">30%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$45.5</span>
+                                        <span class="price_won">59,732원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                        <div><span>품절임박</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/vivid4.jpg" alt="선명한색상 상품4">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">멀버리</p>
+                                        <p class="MDContent">Iris Heavy Grain & Silky Calf HH6266/000Z867</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$1,867</span>
+                                        <span class="discount">30%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$1,306.9</span>
+                                        <span class="price_won">1,715,698원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                        <div><span>품절임박</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/vivid5.jpg" alt="선명한색상 상품5">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">멀버리</p>
+                                        <p class="MDContent">Mini Sadie Satchel Goat RL7226/216R527</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$976</span>
+                                        <span class="discount">5%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$927.2</span>
+                                        <span class="price_won">1,217,228원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>품절임박</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/vivid6.jpg" alt="선명한색상 상품6">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">칼린</p>
+                                        <p class="MDContent">모드_보라</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$104</span>
+                                        <span class="discount">30%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$72.8</span>
+                                        <span class="price_won">95,571</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                        <div><span>사은품</span></div>
+                                        <div><span>품절임박</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/vivid7.jpg" alt="선명한색상 상품7">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">덱케</p>
+                                        <p class="MDContent">모드 미니</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$122</span>
+                                        <span class="discount">30%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$85.4</span>
+                                        <span class="price_won">111,361원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                        <div><span>품절임박</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/vivid8.jpg" alt="선명한색상 상품8">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">라코스테(의류)</p>
+                                        <p class="MDContent">EF389E-52GZAP036_36</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$178</span>
+                                        <span class="discount">30%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$124.6</span>
+                                        <span class="price_won">162,478</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="more">
+                                <span>더보기</span>
+                                <div class="moreBtn"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="themeMDZone">
+                        <div class="themebanner">
+                            <img src="./images/banner/mdBanner4.jpg" alt="우리 가족 선물">
+                            <h3># 우리가족선물</h3>
+                            <span class="btn closeBtn unfold"></span>
+                        </div>
+                        <div class="themeMDBox closeStatus hidden">
+                            <ul class="MDList">
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/family1.jpg" alt="가족 상품1">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">정관장</p>
+                                        <p class="MDContent">홍삼정로얄(240g)</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted"></span>
+                                        <span class="discount"></span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$179</span>
+                                        <span class="price_won">233,416원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/family2.jpg" alt="가족 상품2">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">유한양행</p>
+                                        <p class="MDContent">유한 백수오골드 60정 여성 갱년기 영양제</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$38</span>
+                                        <span class="discount">40%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$22.8</span>
+                                        <span class="price_won">29,731원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/family3.jpg" alt="가족 상품3">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">엘지 프라엘</p>
+                                        <p class="MDContent">메디헤어 HGN1 탈모치료 의료기기</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted"></span>
+                                        <span class="discount"></span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$1,470</span>
+                                        <span class="price_won">1,916,880원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>사은품</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/family4.jpg" alt="가족 상품4">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">설화수</p>
+                                        <p class="MDContent">설화수 진설 얼티메이트 안티에이징 데일리 루틴(2종)</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted"></span>
+                                        <span class="discount"></span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$184</span>
+                                        <span class="price_won">239,936원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/family5.jpg" alt="가족 상품5">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">오므론</p>
+                                        <p class="MDContent">오므론 상완식 혈압계 HEM-7280T</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$113</span>
+                                        <span class="discount">25%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$84.75</span>
+                                        <span class="price_won">110,514원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/family6.jpg" alt="가족 상품6">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">밍크엘레팡</p>
+                                        <p class="MDContent">킹엘리오가닉출산선물세트</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$35</span>
+                                        <span class="discount">30%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$24.5</span>
+                                        <span class="price_won">31,948원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/family7.jpg" alt="가족 상품7">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">브라운</p>
+                                        <p class="MDContent">브라운 8시리즈 방수 면도기 8380CC</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$329</span>
+                                        <span class="discount">30%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$230.3</span>
+                                        <span class="price_won">300,311원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>세일</span></div>
+                                        <div><span>품절임박</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <img src="./images/md/family8.jpg" alt="가족 상품8">
+                                    </div>
+                                    <div class="MDBox">
+                                        <p class="MDTitle">지앤씨</p>
+                                        <p class="MDContent">트리플렉스 패스트액팅 (효과빠른 관절 및 연골건강)</p>
+                                    </div>
+                                    <div class="prevPrice">
+                                        <span class="deleted">$86</span>
+                                        <span class="discount">20%</span>
+                                    </div>
+                                    <div class="actualPrice">
+                                        <span class="price_dollar">$68.8</span>
+                                        <span class="price_won">89,715원</span>
+                                    </div>
+                                    <div class="noticeBox">
+                                        <div><span>사은품</span></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="more">
+                                <span>더보기</span>
+                                <div class="moreBtn"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerTotal">
+            <div class="footerTopWrap">
+                <div id="footer" class="footerArea">
+                    <div class="footerTop">
+                        <ul>
+                            <li><a href="#" title="현대백화점 DUTY FREE 소개">현대백화점 DUTY FREE 소개</a></li>
+                            <li><a href="#" title="입점/제휴">입점/제휴</a></li>
+                            <li><a href="#" title="이용약관">이용약관</a></li>
+                            <li><a href="#" title="개인정보처리방침"><em>개인정보처리방침</em></a></li>
+                            <li><a href="#" title="영상정보처리기기 운영 / 관리방침">영상정보처리기기 운영 / 관리방침</a></li>
+                            <li><a href="#" title="이메일무단수집거부">이메일무단수집거부</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footerBottomWrap">
+                <div class="footerBottom">
+                    <div class="left">
+                        <div class="footerLogo"></div>
+                            <img src="./images/logo_footer.png" alt="로고">
+                        <div class="name"><strong>주식회사 현대백화점면세점</strong></div>
+                        <ul>
+                            <li>
+                                <span>대표이사 : 이재실</span>
+                                <span>서울특별시 강남구 영동대로82길 19</span>
+                                <span>사업자등록번호 : 850-88-00325</span>
+                            </li>
+                            <li>
+                                <span>통신판매업신고 : 2018-서울강남-02228</span>
+                                <span>개인정보보호책임자 : 이정민</span>
+                                <span>호스팅사업자 : (주)현대백화점면세점</span>
+                            </li>
+                            <li>
+                                <span>대표번호 : 1811-6688</span>
+                                <span>대표메일 : hddfs_official@hddfs.com</span>
+                            </li>
+                        </ul>
+                        <p>COPYRIGHT ⓒ HYUNDAI DEPARTMENT STORE DUTY FREE. ALL RIGHTS RESERVED.</p>
+                        <div class="sns">
+                            <div class="faceBook"><a href="#" title="페이스북"><span></span></a></div>
+                            <div class="instagram"><a href="#" title="인스타그램"><span></span></a></div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <strong class="title">주식회사 케이에스넷 구매안전(에스크로) 서비스 가맹점</strong>
+                        <p>안전한 전자상거래를 위해 ㈜ 케이에스넷의 구매안전(에스크로) 서비스에 가입하여, 구매안전(에스크로) 서비스를 제공하고 있습니다.</p>
+                        <p>주식회사 케이에스넷 금융감독원 결제대금예치업</p>
+                        <p>등록번호 : 02-006-00002</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

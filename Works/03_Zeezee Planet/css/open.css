@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "SLEIGothicTTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SLEIGothicTTF.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "SLEIGothicTTF", sans-serif;
+  font-size: 13px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background: #e1d4c3;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 200;
+}
+.loading .logo-area img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 200px;
+}
+.loading .hearts {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.loading .hearts li span {
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: url(../img/Icons_Light_Heart.png) center center no-repeat;
+}
+.loading .hearts li .heart1 {
+  background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;
+}
+.loading .hearts li .heart2 {
+  -webkit-animation: heart2 5s 0.3s ease-out;
+          animation: heart2 5s 0.3s ease-out;
+}
+.loading .hearts li .heart3 {
+  -webkit-animation: heart3 5s 0.6s ease-out;
+          animation: heart3 5s 0.6s ease-out;
+}
+.loading .hearts li .heart4 {
+  -webkit-animation: heart4 5s 0.9s ease-out;
+          animation: heart4 5s 0.9s ease-out;
+}
+.loading .hearts li .heart5 {
+  -webkit-animation: heart5 5s 1.2s ease-out;
+          animation: heart5 5s 1.2s ease-out;
+}
+
+@-webkit-keyframes heart2 {
+  10% {
+    background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;
+  }
+  100% {
+    background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;
+  }
+}
+
+@keyframes heart2 {
+  10% {
+    background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;
+  }
+  100% {
+    background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;
+  }
+}
+@-webkit-keyframes heart3 {
+  10% {
+    background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;
+  }
+  100% {
+    background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;
+  }
+}
+@keyframes heart3 {
+  10% {
+    background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;
+  }
+  100% {
+    background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;
+  }
+}
+@-webkit-keyframes heart4 {
+  10% {
+    background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;
+  }
+  100% {
+    background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;
+  }
+}
+@keyframes heart4 {
+  10% {
+    background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;
+  }
+  100% {
+    background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;
+  }
+}
+@-webkit-keyframes heart5 {
+  10% {
+    background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;
+  }
+  100% {
+    background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;
+  }
+}
+@keyframes heart5 {
+  10% {
+    background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;
+  }
+  100% {
+    background: url(../img/icon_Shopicons_Heart.svg) center center no-repeat;
+  }
+}/*# sourceMappingURL=open.css.map */
